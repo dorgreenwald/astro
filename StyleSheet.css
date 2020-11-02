@@ -1,0 +1,14 @@
+﻿.Upper-tab {
+    display: flex;
+    justify-content: space-between;
+}
+.all-menu-item {
+    padding: 25px,25px,25px,25px;
+}
+.this-menu-item {
+    color: cornflowerblue;
+    padding: 25px,25px,25px,25px;
+}
+.title{
+    font:xxxx-large;
+}
