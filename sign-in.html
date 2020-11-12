@@ -5,21 +5,33 @@
     <title></title>
     <link rel="stylesheet" href="StyleSheet.css" />
 </head>
-<body>
+<body class="backgraund">
     <div class="Upper-tab">
         <div>
-            <span class="all-menu-item">Menu</span>
-            <span class="all-menu-item">Search</span>
-            <span class="all-menu-item">Info</span>
-        </div>
-        <div class="sub-menu">
-            <a href="home-page.html" class="all-menu-item">Home</a>
-            <a href="log-in.html" class="all-menu-item">Log in</a>
-            <a href="sign-in.html" class="this-menu-item">Sign in</a>
+            <a class="a" href="home-page.html"> < back to home </a>
         </div>
     </div>
-    <div>
-        <h1 class="title">sign in</h1>
+    <div class="center">
+        <h1 class="title">CREATE ACCOUNT</h1>
+        <form id="signIn" runat="server">
+            <input type="text" id="name" name="name" placeholder=" name"/>
+            <input type="email" id="email" name="email" placeholder=" email"/>
+            <input type="password" id="password" name="password" placeholder=" password"/>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" confirm password"/>
+            <select id="level" name="level">
+                <option class="gray" hidden>knowledge level</option>
+                <option value="firstTime">first time</option>
+                <option value="hobby">hobby</option>
+                <option value="knowALittle">know a little</option>
+                <option value="knowALot">know a lot</option>
+                <option value="expert">expert</option>
+            </select>
+            <input type="text" id="planet" name="planet" placeholder=" favorite planet"/>
+            <input class="submit center" type="submit" id="btnEnter" name="btnEnter" value="SIGN UP" />
+        </form>
+        <div class="center">
+        <h2> already have an account ? <a class="a" href="log-in.html"> log in </a></h2>
+        </div>
     </div>
 </body>
 </html>

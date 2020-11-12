@@ -1,14 +1,79 @@
 ﻿.Upper-tab {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .all-menu-item {
-    padding: 25px,25px,25px,25px;
+    color: #414a49;
+    padding: 20px 17px;
 }
 .this-menu-item {
-    color: cornflowerblue;
-    padding: 25px,25px,25px,25px;
+    color:#51b0a8;
+    padding: 20px 17px;
 }
-.title{
-    font:xxxx-large;
+.title {
+    color: #40998c;
+    width: fit-content;
+    font-size: 40px;
+    margin: 30px auto;
+    max-width: 450px;
+}
+.backgraund {
+    background-color: white;
+}
+form input, select {
+    display: block;
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: 1px;
+    border-bottom: 2px solid;
+    color: #424242;
+    font-size: 16px;
+}
+label {
+    color: #3f6496;
+    font-size: 18px;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.submit {
+    margin: 25px 0px;
+    width: 60%;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 550;
+    border: 0px;
+    background-color: white;
+    color: #40998c;
+}
+.center {
+    margin: 0px auto;
+    max-width: 500px;
+}
+.space {
+    margin-bottom: 75px;
+    margin-top: 100px;
+}
+h2 {
+    color: #414a49;
+    font-size: 17px;
+}
+.a {
+    color: #51b0a8;
+    font-size: 16px;
+    text-decoration: none;
+}
+.a2 {
+    color: #414a49;
+    font-size: 16px;
+    text-decoration: none;
+}
+.gray {
+color: #424242;
+}
+.turquiz {
+    color: #359991;
 }

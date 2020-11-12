@@ -5,21 +5,19 @@
     <title></title>
     <link rel="stylesheet" href="StyleSheet.css" />
 </head>
-<body>
+<body class="backgraund">
     <div class="Upper-tab">
-        <div>
-            <span class="all-menu-item">Menu</span>
-            <span class="all-menu-item">Search</span>
-            <span class="all-menu-item">Info</span>
-        </div>
-        <div class="sub-menu">
-            <a href="home-page.html" class="all-menu-item">Home</a>
-            <a href="log-in.html" class="this-menu-item">Log in</a>
-            <a href="sign-in.html" class="all-menu-item">Sign in</a>
-        </div>
+        <a class="a2" href="home-page.html"> < back to home</a>
     </div>
     <div>
-        <h1 class="title">log in</h1>
+        <div class="center">
+            <h1 class="title space">lOG IN</h1>
+            <form id="signIn" runat="server">
+                <input type="email" id="email" name="email" placeholder="email"/>
+                <input type="password" id="password" name="password" placeholder="password"/>
+            </form>
+            <h2 class="center"> Don't have an acount ? <a class="a" href="sign-in.html"> SIGN IN </a></h2>
+        </div>
     </div>
 </body>
 </html>
