@@ -25,15 +25,22 @@
     background-color: white;
 }
 form input, select {
+    color: #737373;
+    border: 0px;
+    font-size: 16px;
+}
+.input-container {
     display: block;
     width: 100%;
     padding: 4px;
     margin-bottom: 20px;
     margin-top: 5px;
-    border: 0px;
     border-bottom: 2px solid;
-    color: #737373;
-    font-size: 16px;
+    position: relative;
+}
+
+.select-field {
+width: fit-content;
 }
 ::placeholder {
     color:  #737373;
@@ -82,3 +89,11 @@ fieldset {
     border-color: black;
     padding: 6px 20px;
 }
+.icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+}
+

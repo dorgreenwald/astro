@@ -1,39 +1,50 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <script src="https://kit.fontawesome.com/cc754e490b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="StyleSheet.css" />
 </head>
+
 <body class="backgraund">
     <div class="Upper-tab">
         <div>
-            <a class="large-link gray" href="home-page.html"> < Back to home </a>
+            <a class="large-link gray" href="home-page.html">
+                < Back to home </a>
         </div>
     </div>
     <div class="center">
         <fieldset>
             <legend class="title">CREATE ACCOUNT</legend>
             <form class="styled-form" id="signIn" runat="server">
-                <input type="text" id="name" name="name" placeholder=" Name"/>
-                <input type="email" id="email" name="email" placeholder=" Email"/>
-                <input type="password" id="password" name="password" placeholder=" Password"/>
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Confirm password"/>
-                <select id="level" name="level">
-                    <option hidden>Knowledge level</option>
-                    <option value="firstTime">First time</option>
-                    <option value="hobby">Hobby</option>
-                    <option value="knowALittle">Know a little</option>
-                    <option value="knowALot">Know a lot</option>
-                    <option value="expert">Expert</option>
-                </select>
-                <input type="text" id="planet" name="planet" placeholder=" Favorite planet"/>
+                <input type="text" id="name" name="name" placeholder=" Name" />
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder=" Email " />
+                    <img class="icon" src="pics/icons/email.png">
+                </div>
+                <input type="password" id="password" name="password" placeholder=" Password" />
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Confirm password" />
+                <div class="input-container">
+                    <select class="select-field" id="level" name="level">
+                        <option hidden>Knowledge level</option>
+                        <option value="firstTime">First time</option>
+                        <option value="hobby">Hobby</option>
+                        <option value="knowALittle">Know a little</option>
+                        <option value="knowALot">Know a lot</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                    <img class="icon" src="pics/icons/email.png">
+                </div>
+                <input type="text" id="planet" name="planet" placeholder=" Favorite planet" />
                 <input class="submit center" type="submit" id="btnEnter" name="btnEnter" value="SIGN UP" />
             </form>
         </fieldset>
         <div class="center">
-        <h2> Already have an account ? <a class="large-link turquiz" href="log-in.html"> LOG IN </a></h2>
+            <h2> Already have an account ? <a class="large-link turquiz" href="log-in.html"> LOG IN </a></h2>
         </div>
     </div>
 </body>
+
 </html>
