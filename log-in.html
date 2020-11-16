@@ -15,10 +15,16 @@
     <div>
         <div class="center">
             <fieldset class="space">
-                <legend class="title">lOG IN</legend>
+                <legend class="title">LOG IN</legend>
                 <form id="signIn" runat="server">
-                    <input type="email" id="email" name="email" placeholder="Email" />
-                    <input type="password" id="password" name="password" placeholder="Password" />
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" placeholder="Email" />
+                        <img class="icon" src="pics/icons/email-white.png">
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder="Password" />
+                        <img class="icon" src="pics/icons/password-white.png">
+                    </div>
                     <input class="submit center" type="submit" id="btnEnter" name="btnEnter" value="LOG IN" />
                 </form>
             </fieldset>

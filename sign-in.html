@@ -11,21 +11,29 @@
 <body class="backgraund">
     <div class="Upper-tab">
         <div>
-            <a class="large-link gray" href="home-page.html">
-                < Back to home </a>
+            <a class="large-link gray" href="home-page.html"> < Back to home </a>
         </div>
     </div>
     <div class="center">
         <fieldset>
             <legend class="title">CREATE ACCOUNT</legend>
             <form class="styled-form" id="signIn" runat="server">
-                <input type="text" id="name" name="name" placeholder=" Name" />
+                <div class="input-container">
+                    <input type="text" id="name" name="name" placeholder=" Name" />
+                    <img class="icon" src="pics/icons/user-white">
+                </div>
                 <div class="input-container">
                     <input type="email" id="email" name="email" placeholder=" Email " />
-                    <img class="icon" src="pics/icons/email.png">
+                    <img class="icon" src="pics/icons/email-white.png">
                 </div>
-                <input type="password" id="password" name="password" placeholder=" Password" />
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Confirm password" />
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder=" Password" />
+                    <img class="icon" src="pics/icons/password-white.png">
+                </div>
+                <div class="input-container">
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Confirm password" />
+                    <img class="icon" src="pics/icons/password-white.png">
+                </div>
                 <div class="input-container">
                     <select class="select-field" id="level" name="level">
                         <option hidden>Knowledge level</option>
@@ -35,13 +43,16 @@
                         <option value="knowALot">Know a lot</option>
                         <option value="expert">Expert</option>
                     </select>
-                    <img class="icon" src="pics/icons/email.png">
+                    <img class="icon" src="pics/icons/knoledge-white.png">
                 </div>
-                <input type="text" id="planet" name="planet" placeholder=" Favorite planet" />
+                <div class="input-container">
+                    <input type="text" id="planet" name="planet" placeholder=" Favorite planet" />
+                    <img class="icon" src="pics/icons/planet-white.png">
+                </div>
                 <input class="submit center" type="submit" id="btnEnter" name="btnEnter" value="SIGN UP" />
             </form>
         </fieldset>
-        <div class="center">
+        <div>
             <h2> Already have an account ? <a class="large-link turquiz" href="log-in.html"> LOG IN </a></h2>
         </div>
     </div>
