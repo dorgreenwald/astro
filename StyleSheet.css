@@ -5,6 +5,7 @@
 }
 * {
     box-sizing: border-box;
+    background-color: white;
 }
 .all-menu-item {
     color: #414a49;
@@ -23,10 +24,9 @@
 }
 .backgraund {
     background-color: white;
-    
 }
 form input, select {
-    color: #525151fd;
+    color:  #2b2a2a;
     border: 0px;
     font-size: 16px;
 }
@@ -44,7 +44,7 @@ form input, select {
 width: fit-content;
 }
 ::placeholder {
-    color:  #737373;
+    color:  #2b2a2a;
     opacity: 1;
 }
 label {
@@ -91,10 +91,17 @@ fieldset {
     padding: 6px 20px;
 }
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     bottom: 3px;
     right: 5px;
+    color: black;
 }
-
+.regular-pics {
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 35px;
+}
