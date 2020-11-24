@@ -110,7 +110,7 @@ fieldset {
     display: grid;
     grid-template-columns: 4;
     grid-template-columns: auto auto auto auto;
-    column-gap: 25px;
+    column-gap: 5px;
 }
 .hidden {
     display: none;
