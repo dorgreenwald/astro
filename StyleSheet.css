@@ -104,12 +104,30 @@ fieldset {
     grid-template-columns: auto auto auto auto auto;
     column-gap: 5px;
     row-gap: 35px;
+    margin-top: 20px;
 }
 .speacial-pics {
     display: grid;
     grid-template-columns: 4;
     grid-template-columns: auto auto auto auto;
     column-gap: 25px;
-    margin-bottom: 30px;
-    box-sizing: content-box;
 }
+.hidden {
+    display: none;
+}
+.log-in-size {
+    max-width: 450px;
+}
+.sign-in-size {
+    max-width: 550px;
+}
+button {
+    border: none;
+}
+
+
+
+
+
+
+
