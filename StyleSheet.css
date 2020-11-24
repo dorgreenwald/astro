@@ -66,7 +66,7 @@ body {
 }
 .center {
     margin: 0px auto;
-    max-width: 500px;
+    max-width: fit-content;
 }
 .space {
     margin-bottom: 45px;
@@ -104,4 +104,12 @@ fieldset {
     grid-template-columns: auto auto auto auto auto;
     column-gap: 5px;
     row-gap: 35px;
+}
+.speacial-pics {
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 25px;
+    margin-bottom: 30px;
+    box-sizing: content-box;
 }
