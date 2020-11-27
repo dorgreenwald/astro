@@ -102,15 +102,16 @@ fieldset {
     display: grid;
     grid-template-columns: 5;
     grid-template-columns: auto auto auto auto auto;
-    column-gap: 5px;
-    row-gap: 35px;
+    align-items: stretch;
+    column-gap: 25px;
+    row-gap: 25px;
     margin-top: 20px;
 }
 .speacial-pics {
     display: grid;
     grid-template-columns: 4;
     grid-template-columns: auto auto auto auto;
-    column-gap: 5px;
+    column-gap: 35px;
 }
 .hidden {
     display: none;
@@ -119,14 +120,34 @@ fieldset {
     max-width: 450px;
 }
 .sign-in-size {
-    max-width: 550px;
+    max-width: 500px;
 }
 button {
     border: none;
 }
-
-
-
+.center-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -300px;
+    border: #424242 2px solid;
+}
+.exit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+}
+.more-ifo-pics {
+    margin-left: 30px;
+}
+.more-pics {
+    box-sizing: 25px;
+    font-size: larger;
+}
 
 
 
