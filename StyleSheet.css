@@ -20,7 +20,6 @@
     width: fit-content;
     font-size: 50px;
     margin: 20px auto;
-    max-width: 450px;
 }
 .backgraund {
     background-color: white;
@@ -79,6 +78,9 @@ h2 {
     font-size: 16px;
     text-decoration: none;
 }
+a {
+    text-decoration: none; 
+}
 .gray {
 color: #424242;
 }
@@ -119,7 +121,7 @@ fieldset {
     max-width: 450px;
 }
 .sign-in-size {
-    max-width: 500px;
+    max-width: 600px;
 }
 button {
     border: none;
