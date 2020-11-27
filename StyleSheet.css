@@ -16,10 +16,10 @@
     padding: 20px 17px;
 }
 .title {
-    color: #40998c;
+    color: #51b0a8;
     width: fit-content;
-    font-size: 40px;
-    margin: 30px auto;
+    font-size: 50px;
+    margin: 20px auto;
     max-width: 450px;
 }
 .backgraund {
@@ -66,7 +66,6 @@ body {
 }
 .center {
     margin: 0px auto;
-    max-width: fit-content;
 }
 .space {
     margin-bottom: 45px;
@@ -100,18 +99,18 @@ fieldset {
 }
 .regular-pics {
     display: grid;
+    width: 100%;
     grid-template-columns: 5;
-    grid-template-columns: auto auto auto auto auto;
-    align-items: stretch;
-    column-gap: 25px;
-    row-gap: 25px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     margin-top: 20px;
 }
 .speacial-pics {
     display: grid;
     grid-template-columns: 4;
     grid-template-columns: auto auto auto auto;
-    column-gap: 35px;
+    width: fit-content;
+    column-gap: 20px;
+    margin: 40px auto;
 }
 .hidden {
     display: none;
@@ -129,10 +128,10 @@ button {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 600px;
+    width: 650px;
     height: 600px;
     margin-top: -300px;
-    margin-left: -300px;
+    margin-left: -325px;
     border: #424242 2px solid;
 }
 .exit {
@@ -140,15 +139,16 @@ button {
     top: 10px;
     right: 10px;
     color: black;
+    width: "20px";
+    height: "20px";
 }
 .more-ifo-pics {
-    margin-left: 30px;
+    margin-left: 15px
 }
-.more-pics {
-    box-sizing: 25px;
-    font-size: larger;
+.regular-pic {
+    width: 275px;
+    height: 275px;
+    margin: 10px;
 }
-
-
 
 

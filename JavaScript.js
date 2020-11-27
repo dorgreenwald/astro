@@ -31,4 +31,10 @@ function exit() {
 function more_pics() {
     document.getElementById("more_pics").style.display = "inherit";
     document.getElementById("btn_more_pics").style.display= "none";
+    document.getElementById("btn_less_pics").style.display= "inherit";
+}
+function less_pics() {
+    document.getElementById("more_pics").style.display = "none";
+    document.getElementById("btn_more_pics").style.display= "inherit";
+    document.getElementById("btn_less_pics").style.display= "none";
 }
