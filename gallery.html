@@ -24,54 +24,67 @@
     <div>
         <h1 class="title">Gallery</h1>
     </div>
-    <div class="center">
+    <div onmouseover="show_text_galaxy()" onmouseout="less_text_galaxy" class="center">
         <div class="speacial-pics center">
-        <button onclick="hidden_galaxy()">
-            <img src="pics/gallery/hubble photos/galaxy3.jpg" width="150px" height="150px" />
-        </button>
-        <button onclick="hidden_solarSystem()">
-            <img src="pics/gallery/our solar system/our solar system3.jpg" width="150px" height="150px">
-        </button>
-        <button onclick="hidden_nebula()">
-            <img src="pics/gallery/hubble photos/nebula7.jpg" width="150px" height="150px">
-        </button>
-        <button onclick="hidden_blackHole()">
-            <img src="pics/gallery/not real/black holes2.jpg" width="150px" height="150px">
-        </button>
-    </div>
-    </div>
-    <div class="hidden center-window" id="more_info_galaxys">
-        <button onclick="exit()">
-            <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px">
-        </button>
-        <h1 class="title">Galaxys</h1>
-        <img class="more-info-pics" src="pics/gallery/hubble photos/galaxy3.jpg" width="250px" height="250px" />
-    </div>
-    <div class="hidden center-window" id="more_info_blackHoles">
-        <button onclick="exit()">
-                <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px"/>
-        </button>
-        <h1 class="title">Black Holes</h1>
-        <div>
-            <img class="more-info-pics" src="pics/gallery/not real/black holes2.jpg" width="250px" height="250px"/>
+            <button onclick="hidden_galaxy()">
+                <img class="speacial-pic" src="pics/gallery/hubble photos/galaxy3.jpg" width="200px" height="175px" />
+                <div class="center-text">
+                    <div id="text_galaxy" class="pics-text">galaxy</div>
+                </div>
+            </button>
+            <button onclick="hidden_solarSystem()">
+                <img class="speacial-pic" src="pics/gallery/our solar system/our solar system3.jpg" width="200px" height="175px" />
+            </button>
+            <button onclick="hidden_nebula()">
+                <img class="speacial-pic" src="pics/gallery/hubble photos/nebula7.jpg"width="200px" height="175px" />
+            </button>
+            <button onclick="hidden_blackHole()">
+                <img class="speacial-pic" src="pics/gallery/not real/black holes2.jpg" width="200px" height="175px" />
+            </button>
         </div>
     </div>
-    <div class="hidden center-window" id="more_info_nebulas">
-        <button onclick="exit()">
-            <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px"/>
-        </button>
-        <h1 class="title">Nebulas</h1>
-        <div>
-            <img src="pics/gallery/hubble photos/nebula7.jpg" width="250px" height="250px"/>
+    <div id="overlay" onclick="exit()">
+        <div class="hidden center-window" id="more_info_galaxys" onclick="event.stopPropagation()">
+            <button onclick="exit()">
+                <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px">
+            </button>
+            <h1 class="title">Galaxys</h1>
+            <div class="pic_and_text">
+                <img class="more-info-pics" src="pics/gallery/hubble photos/galaxy3.jpg" width="250px" height="250px" />
+                <div>
+                    <h3>
+                        galaxys are so so so so so so so so so so so so beutiful
+                    </h3>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="hidden center-window" id="more_info_solarSystem">
-        <button onclick="exit()">
-            <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px"/>
-        </button>
-        <h1 class="title">Our solar system</h1>
-        <div>
-            <img src="pics/gallery/our solar system/our solar system3.jpg" width="250px" height="250px"/>
+        <div class="hidden center-window" id="more_info_blackHoles" onclick="event.stopPropagation()">
+            <button onclick="exit()">
+                <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px" />
+            </button>
+            <h1 class="title">Black Holes</h1>
+            <div>
+                <img class="more-info-pics" src="pics/gallery/not real/black holes2.jpg" width="250px" height="250px" />
+            </div>
+        </div>
+        <div class="hidden center-window" id="more_info_nebulas" onclick="event.stopPropagation()">
+            <button onclick="exit()">
+                <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px" />
+            </button>
+            <h1 class="title">Nebulas</h1>
+            <div>
+                <img class="more-info-pics" src="pics/gallery/hubble photos/nebula7.jpg" width="250px" height="250px" />
+            </div>
+        </div>
+        <div class="hidden center-window" id="more_info_solarSystem" onclick="event.stopPropagation()">
+            <button onclick="exit()">
+                <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px" />
+            </button>
+            <h1 class="title">Our solar system</h1>
+            <div>
+                <img class="more-info-pics" src="pics/gallery/our solar system/our solar system3.jpg" width="250px"
+                    height="250px" />
+            </div>
         </div>
     </div>
     <div>
@@ -102,17 +115,12 @@
             <img class="regular-pic" src="pics/gallery/hubble photos/mercury1.jpg" />
             <img class="regular-pic" src="pics/gallery/hubble photos/merging galaxies1.jpg" />
             <img class="regular-pic" src="pics/gallery/not real/nebula1.jpg" />
-            <img class="regular-pic" src="pics/gallery/hubble photos/sattelite1.jpg" />
+            <img class="regular-pic" src="pics/gallery/hubble photos/universe5.jpg" />
             <img class="regular-pic" src="pics/gallery/hubble photos/universe8.jpg" />
             <img class="regular-pic" src="pics/gallery/not real/planet2.jpg" />
             <img class="regular-pic" src="pics/gallery/our solar system/saturn.jpg" />
         </div>
-        <button onclick="more_pics()" id="btn_more_pics">
-            <h1> more > </h1>
-        </button>
-        <button class=" hidden" onclick="less_pics()" id="btn_less_pics">
-            <h1> < less </h1>
-        </button>
+        <button onclick="more_or_less_pics()" id="btn_more_or_less_pics"> more > </button>
         <div class="regular-pics center hidden" id="more_pics">
             <img class="regular-pic" src="pics/gallery/our solar system/mars.jpg" />
             <img class="regular-pic" src="pics/gallery/not real/black hole1.jpg" />
@@ -120,7 +128,6 @@
             <img class="regular-pic" src="pics/gallery/hubble photos/star birth1.jpg" />
             <img class="regular-pic" src="pics/gallery/not real/milky way1.jpg" />
             <img class="regular-pic" src="pics/gallery/not real/nebula1.jpg" />
-            <img class="regular-pic" src="pics/gallery/not real/planet2.jpg" />
             <img class="regular-pic" src="pics/gallery/not real/star1.jpg" />
             <img class="regular-pic" src="pics/gallery/hubble photos/waterfall of stars1.jpg" />
             <img class="regular-pic" src="pics/gallery/not real/universe2.jpg" />
@@ -139,7 +146,6 @@
             <img class="regular-pic" src="pics/gallery/hubble photos/nebula11.jpg" />
             <img class="regular-pic" src="pics/gallery/not real/black holes1.jpg" />
             <img class="regular-pic" src="pics/gallery/hubble photos/universe3.jpg" />
-            <img class="regular-pic" src="pics/gallery/our solar system/our solar system2.jpg" />
             <img class="regular-pic" src="pics/gallery/not real/black hole3.jpg" />
         </div>
     </div>

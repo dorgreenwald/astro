@@ -18,7 +18,7 @@
 .title {
     color: #51b0a8;
     width: fit-content;
-    font-size: 50px;
+    font-size: 55px;
     margin: 20px auto;
 }
 .backgraund {
@@ -113,6 +113,7 @@ fieldset {
     width: fit-content;
     column-gap: 20px;
     margin: 40px auto;
+    opacity: 1;
 }
 .hidden {
     display: none;
@@ -135,6 +136,7 @@ button {
     margin-top: -300px;
     margin-left: -325px;
     border: #424242 2px solid;
+    cursor: default;    
 }
 .exit {
     position: absolute;
@@ -144,13 +146,58 @@ button {
     width: "20px";
     height: "20px";
 }
-.more-ifo-pics {
-    margin-left: 15px
+.more-info-pics {
+    padding-left: 15px
 }
 .regular-pic {
     width: 275px;
     height: 275px;
     margin: 10px;
 }
-
-
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3; 
+    cursor: pointer; 
+}
+button {
+    cursor: pointer;
+}
+.speacial-pic {
+    opacity: 1;
+}
+.speacial-pic:hover  {    
+    background-color: rgba(185, 181, 181, 0.144);
+    opacity: 0.3;
+}
+.pics-text {
+    color: white;
+    font-size: 16px;
+    display: none;
+    position: relative;
+}
+.center-text {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+    cursor: pointer; 
+}
+.pic-and-text {
+    display: grid;
+    columns: 2;
+    width: 100%;
+    grid-template-columns: 250px auto;
+    column-gap: 10px;
+}
