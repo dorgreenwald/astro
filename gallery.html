@@ -24,36 +24,46 @@
     <div>
         <h1 class="title">Gallery</h1>
     </div>
-    <div onmouseover="show_text_galaxy()" onmouseout="less_text_galaxy" class="center">
-        <div class="speacial-pics center">
-            <button onclick="hidden_galaxy()">
-                <img class="speacial-pic" src="pics/gallery/hubble photos/galaxy3.jpg" width="200px" height="175px" />
-                <div class="center-text">
-                    <div id="text_galaxy" class="pics-text">galaxy</div>
-                </div>
-            </button>
-            <button onclick="hidden_solarSystem()">
-                <img class="speacial-pic" src="pics/gallery/our solar system/our solar system3.jpg" width="200px" height="175px" />
-            </button>
-            <button onclick="hidden_nebula()">
-                <img class="speacial-pic" src="pics/gallery/hubble photos/nebula7.jpg"width="200px" height="175px" />
-            </button>
-            <button onclick="hidden_blackHole()">
-                <img class="speacial-pic" src="pics/gallery/not real/black holes2.jpg" width="200px" height="175px" />
-            </button>
-        </div>
+    <div class="speacial-pics center">
+        <button class="pics-button" onclick="hidden_galaxy()">
+            <img class="speacial-pic" src="pics/gallery/hubble photos/galaxy3.jpg" width="200px" height="175px" />
+            <div class="center-text">
+                <div class="pics-text">Galaxies</div>
+            </div>
+        </button>
+        <button class="pics-button" onclick="hidden_solarSystem()">
+            <img class="speacial-pic" src="pics/gallery/our solar system/our solar system3.jpg" width="200px"
+                height="175px" />
+            <div class="center-text">
+                <div class="pics-text">Our solar system</div>
+            </div>
+        </button>
+        <button class="pics-button" onclick="hidden_nebula()">
+            <img class="speacial-pic" src="pics/gallery/hubble photos/nebula7.jpg" width="200px" height="175px" />
+            <div class="center-text">
+                <div class="pics-text">nebulas</div>
+            </div>
+        </button>
+        <button onclick="hidden_blackHole()">
+            <img class="speacial-pic" src="pics/gallery/not real/black holes2.jpg" width="200px" height="175px" />
+        </button>
+    </div>
     </div>
     <div id="overlay" onclick="exit()">
         <div class="hidden center-window" id="more_info_galaxys" onclick="event.stopPropagation()">
             <button onclick="exit()">
                 <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px">
             </button>
-            <h1 class="title">Galaxys</h1>
-            <div class="pic_and_text">
+            <h1 class="title">Galaxies</h1>
+            <div class="pic-and-text">
                 <img class="more-info-pics" src="pics/gallery/hubble photos/galaxy3.jpg" width="250px" height="250px" />
                 <div>
-                    <h3>
-                        galaxys are so so so so so so so so so so so so beutiful
+                    <h3 class="text">
+                        Galaxy is the largest orderly structure in the universe.
+                        It is a collection of stars that gravitational interaction binds together, and they all revolve
+                        together with the galaxy.
+                        Neighboring galaxies make up galaxies and galaxy clusters and these are superclusters that
+                        contain many groups and clusters.
                     </h3>
                 </div>
             </div>
@@ -72,8 +82,20 @@
                 <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px" />
             </button>
             <h1 class="title">Nebulas</h1>
-            <div>
+            <div class="pic-and-text">
                 <img class="more-info-pics" src="pics/gallery/hubble photos/nebula7.jpg" width="250px" height="250px" />
+                <div>
+                    <h3 class="text">
+                        Nebula is huge clouds of gas and dust that are found throughout the universe
+                        and sometimes extend for hundreds of light-years from one end of the cloud to another.
+                        Stars are formed in nebulae but the largest ones end their life as a nebula, from which new
+                        stars will form.
+                        There is dark nebulas, which are so dense and cold that they block the light of the stars behind
+                        them.
+                        But the really impressive nebulas, of course, are the ones that shine in spectacular colors, as
+                        you can see in the pictures.
+                    </h3>
+                </div>
             </div>
         </div>
         <div class="hidden center-window" id="more_info_solarSystem" onclick="event.stopPropagation()">
@@ -81,9 +103,20 @@
                 <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px" />
             </button>
             <h1 class="title">Our solar system</h1>
-            <div>
+            <div class="pic-and-text">
                 <img class="more-info-pics" src="pics/gallery/our solar system/our solar system3.jpg" width="250px"
                     height="250px" />
+                <div>
+                    <h3 class="text">
+                        The solar system is a planetary system created about 4.6 billion years ago,
+                        in which eight other planets and many other bodies orbit the sun according to the relevant
+                        gravitational forces.
+                        The main large bodies orbiting the Sun are the eight planets:
+                        Mercury, Venus, Mars, Jupiter, Saturn Uranus and Neptune
+                        joined by dwarf planets and a large number of small bodies such as asteroids, comets and
+                        meteoroids.
+                    </h3>
+                </div>
             </div>
         </div>
     </div>

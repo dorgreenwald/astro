@@ -38,7 +38,6 @@ form input, select {
     border-bottom: 2px solid;
     position: relative;
 }
-
 .select-field {
 width: fit-content;
 }
@@ -147,7 +146,7 @@ button {
     height: "20px";
 }
 .more-info-pics {
-    padding-left: 15px
+    margin: 0px 15px
 }
 .regular-pic {
     width: 275px;
@@ -170,34 +169,33 @@ button {
 button {
     cursor: pointer;
 }
-.speacial-pic {
+.pics-button:hover .center-text {    
+    color: black;
     opacity: 1;
 }
-.speacial-pic:hover  {    
-    background-color: rgba(185, 181, 181, 0.144);
-    opacity: 0.3;
+.pics-button:hover .speacial-pic {
+    opacity: 0.6;
 }
 .pics-text {
-    color: white;
-    font-size: 16px;
-    display: none;
+    font-size: 20px;
     position: relative;
+    background-color: rgba(0,0,0,0);
 }
 .center-text {
-    opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 150px;
-    height: 150px;
-    margin-top: -75px;
-    margin-left: -75px;
-    cursor: pointer; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0);
+    opacity: 0;
 }
 .pic-and-text {
-    display: grid;
-    columns: 2;
-    width: 100%;
-    grid-template-columns: 250px auto;
-    column-gap: 10px;
+    display: flex;
+}
+.pics-button {
+    position: relative;
+}
+.text {
+    margin: 0px;
+    padding-right: 10px;
 }

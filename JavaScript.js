@@ -46,9 +46,3 @@ function more_or_less_pics() {
         document.getElementById("btn_more_or_less_pics").innerText = "more >";
     }
 }
-function show_text_galaxy() {
-    document.getElementById("text_galaxy").style.display = "inherit";
-}
-function less_text_galaxy() {
-    document.getElementById("text_galaxy").style.display = "none";
-}

@@ -39,11 +39,11 @@
                 <div class="input-container">
                     <select class="select-field" id="level" name="level">
                         <option hidden>Knowledge level</option>
-                        <option value="firstTime">First time</option>
-                        <option value="hobby">Hobby</option>
-                        <option value="knowALittle">Know a little</option>
-                        <option value="knowALot">Know a lot</option>
-                        <option value="expert">Expert</option>
+                        <option id="1" value="firstTime">First time</option>
+                        <option id="2" value="hobby">Hobby</option>
+                        <option id="3" value="knowALittle">Know a little</option>
+                        <option id="4" value="knowALot">Know a lot</option>
+                        <option id="5" value="expert">Expert</option>
                     </select>
                     <img class="icon" src="pics/icons/new/knowledge.webp">
                 </div>
