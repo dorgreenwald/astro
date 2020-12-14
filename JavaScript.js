@@ -37,7 +37,7 @@ function exit() {
 function more_or_less_pics() {
     if (document.getElementById("btn_more_or_less_pics").innerText == "more >")
     {
-        document.getElementById("more_pics").style.display = "inherit";
+        document.getElementById("more_pics").style.display = "grid";
         document.getElementById("btn_more_or_less_pics").innerText = " < less";
     }
     else
