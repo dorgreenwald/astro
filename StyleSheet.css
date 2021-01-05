@@ -51,8 +51,9 @@ label {
     color: #3f6496;
     font-size: 18px;
 }
-body {
+body, html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
 }
 .submit {
     margin: 25px 0px;
@@ -211,6 +212,7 @@ button {
     font-family: inherit;
     margin: 0;
     cursor: pointer;
+    padding: 10px 20px 0px 17px;
   }
   .dropdown-content {
     display: none;
@@ -242,7 +244,27 @@ button {
       color: #424242;
       width: 30px;
       height: 30px;
-      position: absolute;
-      top: 15px;
-      left: 20px;
+  }
+  :focus {
+      outline: none;
+  }
+  .info-pic-float {
+      float: left;
+      margin-right: 15px;
+  }
+  .info-text-and-pic {
+      padding: 15px;
+      text-align: justify;
+  }
+  .info {
+      display: flex;
+      height: 100%;
+  }
+  .menu {
+      order: 2;
+  }
+  .subjects {
+      overflow-y: auto;
+      flex: 1 1 auto;
+      min-height: 0px;
   }
