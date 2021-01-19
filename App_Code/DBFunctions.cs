@@ -18,4 +18,14 @@ public class DBFunctions
         cmd.ExecuteNonQuery();
         conn.Close();
     }
+    public static string GetName(string query)
+    {
+        string name;
+        SqlConnection conn = new SqlConnection(connStr);
+        SqlCommand cmd = new SqlCommand(query, conn);
+        conn.Open();
+        name = cmd.ExecuteScalar().ToString();
+        conn.Close();
+        return name;
+    }
 }
