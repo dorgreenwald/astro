@@ -16,7 +16,7 @@ public partial class log_in2 : System.Web.UI.Page
             password = Request.Form["password"];
             query = "SELECT name FROM tblUsers WHERE email = '" + email + "' AND password = '" + password + "'";
             name = DBFunctions.GetName(query);
-            //Response.Write(name);
+            Response.Write(name);
             Session["name"] = name;
             Response.Redirect("home_page2.aspx");
         }

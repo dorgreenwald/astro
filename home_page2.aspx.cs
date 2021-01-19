@@ -5,15 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class log_in2 : System.Web.UI.Page
+public partial class home_page2 : System.Web.UI.Page
 {
     protected void PageLoad(object sender, EventArgs e)
     {
         string name;
         if (Session["name"] != null)
-            name = (string)Session["name"];
+            name = "hello" + (string)Session["name"];
         else
-            name = "";
-        lblName.Text = "hello" + name;
+            name = "welcome to astro";
+        lblName.Text += name;
     }
 }
