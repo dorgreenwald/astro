@@ -13,32 +13,35 @@
 <body class="backgraund">
     <div class="Upper-tab">
         <div>
-            <a class="large-link gray" href="home-page.html"> < Back to home </a>
+            <a class="large-link gray" href="home_page.aspx"> < Back to home </a>
         </div>
     </div>
     <div class="center sign-in-size">
         <fieldset>
             <legend class="title">CREATE  ACCOUNT</legend>
             <form class="styled-form" id="signIn" runat="server">
-                <div class="input-container">
-                    <input type="text" id="name" name="name" placeholder=" Name" />
+                <div class="input-container required">
+                    <input type="text" id="name" name="name" placeholder=" Name" required/>
                     <img class="icon" src="pics/icons/new/user.png">
                 </div>
-                <div class="input-container">
-                    <input type="email" id="email" name="email" placeholder=" Email " />
+                <div class="input-container required">
+                    <input type="email" id="email" name="email" placeholder=" Email" required/>
                     <img class="icon" src="pics/icons/new/email.png">
                 </div>
-                <div class="input-container">
-                    <input type="password" id="password" name="password" placeholder=" Password" />
+                <div class="input-container required">
+                    <input type="password" id="password" name="password" placeholder=" Password" required/>
                     <img class="icon" src="pics/icons/new/password.png">
                 </div>
-                <div class="input-container">
-                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Confirm password" />
+                <div class="input-container required">
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Confirm password" required/>
                     <img class="icon" src="pics/icons/new/password.png">
                 </div>
-                <div class="input-container">
-                    <select class="select-field" id="level" name="level">
-                        <option hidden>Knowledge level</option>
+                <div>
+                    <asp:Label class="red" ID="lblmsg" runat="server"></asp:Label>
+                </div>
+                <div class="input-container required">
+                    <select class="select-field" id="level" name="level" required>
+                        <option value="1" hidden>Knowledge level</option>
                         <option id="1" value="1">First time</option>
                         <option id="2" value="2">Hobby</option>
                         <option id="3" value="3">Know a little</option>
@@ -57,7 +60,7 @@
             </form>
         </fieldset>
         <div>
-            <h2> Already have an account ? <a class="large-link turquiz" href="log-in.html"> LOG IN </a></h2>
+            <h2> Already have an account ? <a class="large-link turquiz" href="log_in.aspx"> LOG IN </a></h2>
         </div>
     </div>
 </body>

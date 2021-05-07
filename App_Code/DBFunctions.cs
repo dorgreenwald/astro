@@ -21,10 +21,17 @@ public class DBFunctions
     public static string GetName(string query)
     {
         string name;
+        object result;
         SqlConnection conn = new SqlConnection(connStr);
         SqlCommand cmd = new SqlCommand(query, conn);
         conn.Open();
-        name = cmd.ExecuteScalar().ToString();
+        result = cmd.ExecuteScalar();
+        if (cmd.ExecuteScalar() != null)
+            name = result.ToString();
+        else
+        {
+            name = null;
+        }
         conn.Close();
         return name;
     }

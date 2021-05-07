@@ -17,8 +17,15 @@ public partial class log_in : System.Web.UI.Page
             query = "SELECT name FROM tblUsers WHERE email = '" + email + "' AND password = '" + password + "'";
             name = DBFunctions.GetName(query);
             //Response.Write(name);
-            Session["name"] = name;
-            Response.Redirect("home_page.aspx");
+            if (name != null)
+            {
+                Session["name"] = name;
+                Response.Redirect("home_page.aspx");
+            }
+            else
+            {
+                loginFailed.Text = "Wrong user name or password";
+            }
         }
     }
 }

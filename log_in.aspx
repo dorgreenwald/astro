@@ -9,7 +9,7 @@
 </head>
 <body class="backgraund">
     <div class="Upper-tab">
-        <a class="large-link gray" href="home-page.html">
+        <a class="large-link gray" href="home_page.aspx">
         < Back to home</a>
     </div>
     <div>
@@ -25,13 +25,16 @@
                         <input type="password" id="password" name="password" placeholder="Password" />
                         <img class="icon" src="pics/icons/new/password.png"/>
                     </div>
+                    <div>
+                        <asp:Label Class="red" ID="loginFailed" runat="server"></asp:Label>
+                    </div>
                     <div class="center">
                         <input class="submit" type="submit" id="btnEnter" name="btnEnter" value="LOG IN" />
 
                     </div>
                 </form>
             </fieldset>
-            <h2> Don't have an acount ? <a class="large-link turquiz" href="sign-in.html"> SIGN IN </a></h2>
+            <h2> Don't have an acount ? <a class="large-link turquiz" href="sign_in.aspx"> SIGN IN </a></h2>
         </div>
     </div>
 </body>

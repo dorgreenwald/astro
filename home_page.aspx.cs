@@ -9,11 +9,29 @@ public partial class home_page : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        string title;
         string name;
         if (Session["name"] != null)
-            name = "hello " + (string)Session["name"];
+        {
+            name = (string)Session["name"];
+            title = "hello " + name;
+            lblTitle.Text = title;
+            aLogIn.Visible = false;
+            aSignIn.Visible = false;
+        }
         else
-            name = "welcome to astro";
-        lblName.Text = name;
+        { 
+            title = "welcome to astro";
+            name = "guest";
+            lblTitle.Text = title;
+            aLogIn.Visible = true;
+            aSignIn.Visible = true;
+        }
+        account.Text = name;
+
+        if (Request.Form["btnLogOut"] != null)
+        {
+            Session.Abandon();
+        }
     }
 }

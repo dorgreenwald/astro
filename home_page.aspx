@@ -15,19 +15,30 @@
                     <img class="menu-icon" src="pics/icons/new/menu.png" />
                 </div>
                 <div class="dropdown-content">
-                    <a href="gallery.html">Gallery</a>
-                    <a href="quiz.html">Quiz</a>
-                    <a href=" info.html">Info</a>
+                    <a href="gallery.aspx">Gallery</a>
+                    <a href="quiz.aspx">Quiz</a>
+                    <a href=" info.">Info</a>
                 </div>
             </div>
             <div class="sub-menu">
-                <a href="home-page.html" class="all-menu-item">Home</a>
-                <a href="log_in.aspx" class="all-menu-item">Log in</a>
-                <a href="sign_in.aspx" class="all-menu-item">Sign in</a>
+                <a href="home_page.aspx" class="all-menu-item">Home</a>
+                <asp:HyperLink NavigateUrl="~/log_in.aspx" id ="aLogIn" CssClass="all-menu-item" text="Log in" runat="server" />
+                <asp:HyperLink NavigateUrl="~/sign_in.aspx" id ="aSignIn" CssClass="all-menu-item" text="Sign in" runat="server" />
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <img src="pics/icons/new/user.png" class="account-pic">
+                    </div>
+                    <div class="dropdown-content center">
+                        <asp:Label class="all-menu-item center account-name" id="account" runat="server"/>
+                        <form id="logOut" runat="server">
+                            <input type="submit" name="btnLogOut" value="Log out" class="button"/>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="center">
-            <asp:Label class="title center" id="lblName" runat="server"/>
+            <asp:Label class="title" id="lblTitle" runat="server"/>
             <div>
                 <img src="pics/logo.jpg" />
             </div>
