@@ -387,9 +387,10 @@ button {
 
 .question-container {
     border-color: black;
-    border: 2px solid;
+    border: 3px solid;
     width: 600px;
     height: 400px;
+    padding: 20px;
 }
 
 .next-level {
