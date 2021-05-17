@@ -35,10 +35,10 @@
                 <h3 class="center">How many planets are there in our solar system?</h3>
             </div>
             <div>
-                <input class="answer-text" type="number" id="ques1" />
+                <input class="answer-text center" type="number" id="ques1" />
                 <!-- answer: 8 -->
             </div>
-            <button id="next1" onclick="question1()" class="submit">Check answer</button>
+            <button id="next1" onclick="question1()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 2: -->
@@ -47,15 +47,15 @@
                 <h3 class="center">The closest planet to Earth is...</h3>
             </div>
             <div>
-                <input class="answer-text" type="text" id="ques2" />
+                <input class="answer-text center" type="text" id="ques2" />
                 <!-- answer: venus -->
             </div>
-            <button id="next2" onclick="question2()" class="submit">Check answer</button>
+            <button id="next2" onclick="question2()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 3: -->
         <div id="quesbox3" class="question-container hidden center">
-            <div class="question">
+            <div class="question center">
                 <h3 class="center">All the points of light seen at night in the sky are planets?</h3>
 
                 <div class="multiple-choice">
@@ -65,13 +65,13 @@
                     </div>
                     <!-- answer: no -->
                 </div>
-                <button id="next3" onclick="question3()" class="submit">Check answer</button>
+                <button id="next3" onclick="question3()" class="submit center">Check answer</button>
             </div>
         </div>
 
         <!-- question 4: -->
         <div id="quesbox4" class="question-container hidden center">
-            <div class="question">
+            <div class="question center">
                 <h3 class="center">The ring around Saturn contains mainly...</h3>
                 <button id="next41" onclick="question41()" class="level-button">Rocks</button>
                 <button id="next42" onclick="question42()" class="level-button ">Ice</button>
@@ -79,22 +79,22 @@
                 <button id="next44" onclick="question44()" class="level-button ">Saturn has no rings</button>
                 <%--answer ice--%>
             </div>
-            <button id="next4" onclick="question4()" class="submit">Check answer</button>
+            <button id="next4" onclick="question4()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 5: -->
         <div id="quesbox5" class="question-container hidden center">
-            <div class="question">
+            <div class="question center">
                 <h3 class="center">What is the common unit of distance in astrophysics?</h3>
-                <input class="answer-text" type="text" id="ques5" />
+                <input class="answer-text center" type="text" id="ques5" />
                 <%--answer light years / parsec--%>
             </div>
-            <button id="next5" onclick="question5()" class="submit">Check answer</button>
+            <button id="next5" onclick="question5()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 6: -->
         <div id="quesbox6" class="question-container hidden center">
-            <div class="question">
+            <div class="question center">
                 <h3 class="center">Have humans ever left our solar system?</h3>
 
                 <div class="multiple-choice">
@@ -103,7 +103,7 @@
                         <button id="next6N" onclick="question6N()" class="true-or-false">False</button>
                     </div>
                 </div>
-                <button id="next6" onclick="question6()" class="submit">Check answer</button>
+                <button id="next6" onclick="question6()" class="submit center">Check answer</button>
             </div>
             <!-- answer: no -->
         </div>

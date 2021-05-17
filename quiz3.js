@@ -72,22 +72,22 @@ function question41() {
     document.getElementById("next41").style.backgroundColor = "#2f5b96";
     document.getElementById("next42").style.backgroundColor = "#447ac2";
     document.getElementById("next43").style.backgroundColor = "#447ac2";
-    document.getElementById("next43").style.backgroundColor = "#447ac2";
+    document.getElementById("next44").style.backgroundColor = "#447ac2";
 }
 function question42() {
     document.getElementById("next42").style.backgroundColor = "#2f5b96";
     document.getElementById("next41").style.backgroundColor = "#447ac2";
     document.getElementById("next43").style.backgroundColor = "#447ac2";
-    document.getElementById("next43").style.backgroundColor = "#447ac2";
+    document.getElementById("next44").style.backgroundColor = "#447ac2";
 }
 function question43() {
     document.getElementById("next43").style.backgroundColor = "#2f5b96";
     document.getElementById("next41").style.backgroundColor = "#447ac2";
     document.getElementById("next42").style.backgroundColor = "#447ac2";
-    document.getElementById("next43").style.backgroundColor = "#447ac2";
+    document.getElementById("next44").style.backgroundColor = "#447ac2";
 }
 function question44() {
-    document.getElementById("next43").style.backgroundColor = "#2f5b96";
+    document.getElementById("next44").style.backgroundColor = "#2f5b96";
     document.getElementById("next41").style.backgroundColor = "#447ac2";
     document.getElementById("next42").style.backgroundColor = "#447ac2";
     document.getElementById("next43").style.backgroundColor = "#447ac2";
@@ -95,7 +95,7 @@ function question44() {
 function question4() {
     if (document.getElementById("next4").innerText == "Check answer") {
         document.getElementById("next4").innerText = "Next question >";
-        if (document.getElementById("next42").style.backgroundColor == "#2f5b96") {
+        if (document.getElementById("next44").style.backgroundColor == "#2f5b96") {
             document.getElementById("quesbox4").style.borderColor = "#3f6496";
             count++;
         }
@@ -146,16 +146,19 @@ function question6() {
             document.getElementById("quesbox6").style.borderColor = "#f5860f";
         }
     }
-    else if (document.getElementById("next6").innerText == "Next question >") {
+    else if (document.getElementById("next6").innerText == "Finish quiz") {
         {
             document.getElementById("quesbox6").style.display = "none";
-            document.getElementById("next-level").style.display = "none";
-            document.getElementById("previous-level").style.display = "none";
+            //document.getElementById("next-level").style.display = "none";
+            //document.getElementById("previous-level").style.display = "none";
             document.getElementById("grade").style.display = "inherit";
         }
     }
 }
 
 function grade() {
+    document.getElementById("show_grade").style.display = "none";
+    document.getElementById("final_grade").innerText = count + " / 6";
+    document.getElementById("final_grade").style.display = "inherit";
     return count;
 }

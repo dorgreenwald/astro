@@ -38,7 +38,7 @@
                 <input class="answer-text" type="number" id="ques1" />
                 <!-- answer: 3 -->
             </div>
-            <button id="next1" onclick="question1()" class="submit">Check answer</button>
+            <button id="next1" onclick="question1()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 2: -->
@@ -50,7 +50,7 @@
                 <input class="answer-text" type="text" id="ques2" />
                 <!-- answer: polaris / Polaris -->
             </div>
-            <button id="next2" onclick="question2()" class="submit">Check answer</button>
+            <button id="next2" onclick="question2()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 3: -->
@@ -65,7 +65,7 @@
                     </div>
                     <!-- answer: no -->
                 </div>
-                <button id="next3" onclick="question3()" class="submit">Check answer</button>
+                <button id="next3" onclick="question3()" class="submit center">Check answer</button>
             </div>
         </div>
 
@@ -77,9 +77,9 @@
                 <button id="next42" onclick="question42()" class="level-button">Brighter and hotter</button>
                 <button id="next43" onclick="question43()" class="level-button">Less bright and hotter</button>
                 <button id="next44" onclick="question44()" class="level-button">Brighter and colder</button>
-                <%--answer ice--%>
+                <%--answer Brighter and colder--%>
             </div>
-            <button id="next4" onclick="question4()" class="submit">Check answer</button>
+            <button id="next4" onclick="question4()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 5: -->
@@ -107,9 +107,13 @@
             <!-- answer: no -->
         </div>
         
-        <div id="grade" class="grade">
-            <h2 class="title">Good job!</h2>
-            <h3>you completed the first quiz </h3>
+        <div id="grade" class="grade center">
+            <h2 class="title center">Good job!</h2>
+            <h3 class="center">You completed the first quiz </h3>
+            <button id="show_grade" class="show-grade center" onclick="grade()">Show your grade</button>
+            <div>
+                <h1 id="final_grade" class="hidden center">/</h1>
+            </div>
             <button id="previous_level" onclick="document.location='quiz.aspx'" class="next-level">< Previous level </button>
             <button id="next_level" onclick="document.location='quiz2.aspx'" class="next-level">Next level ></button>
         </div>

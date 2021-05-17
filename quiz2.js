@@ -146,16 +146,19 @@ function question6() {
             document.getElementById("quesbox6").style.borderColor = "#f5860f";
         }
     }
-    else if (document.getElementById("next6").innerText == "Next question >") {
+    else if (document.getElementById("next6").innerText == "Finish quiz") {
         {
             document.getElementById("quesbox6").style.display = "none";
-            document.getElementById("next-level").style.display = "none";
-            document.getElementById("previous-level").style.display = "none";
+            //document.getElementById("next-level").style.display = "none";
+            //document.getElementById("previous-level").style.display = "none";
             document.getElementById("grade").style.display = "inherit";
         }
     }
 }
 
 function grade() {
+    document.getElementById("show_grade").style.display = "none";
+    document.getElementById("final_grade").innerText = count + " / 6";
+    document.getElementById("final_grade").style.display = "inherit";
     return count;
 }

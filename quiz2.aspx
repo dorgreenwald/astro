@@ -38,7 +38,7 @@
                 <input class="answer-text" type="number" id="ques1" />
                 <!-- answer: 99 / 99.8 -->
             </div>
-            <button id="next1" onclick="question1()" class="submit">Check answer</button>
+            <button id="next1" onclick="question1()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 2: -->
@@ -47,10 +47,10 @@
                 <h3 class="center">>What is the last object in our solar system?</h3>
             </div>
             <div>
-                <input class="answer-text" type="text" id="ques2" />
+                <input class="answer-text center" type="text" id="ques2" />
                 <!-- answer: oort cloud / the oort cloud -->
             </div>
-            <button id="next2" onclick="question2()" class="submit">Check answer</button>
+            <button id="next2" onclick="question2()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 3: -->
@@ -65,7 +65,7 @@
                     </div>
                     <!-- answer: yes -->
                 </div>
-                <button id="next3" onclick="question3()" class="submit">Check answer</button>
+                <button id="next3" onclick="question3()" class="submit center">Check answer</button>
             </div>
         </div>
 
@@ -79,39 +79,43 @@
                 <button id="next44" onclick="question44()" class="level-button">They will both explode</button>
                 <%--answer They will bond and be permanently stuck together--%>
             </div>
-            <button id="next4" onclick="question4()" class="submit">Check answer</button>
+            <button id="next4" onclick="question4()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 5: -->
         <div id="quesbox5" class="question-container hidden center">
             <div class="question">
                 <h3 class="center">Where is the highest mountain in our solar system?</h3>
-                <input class="answer-text" type="text" id="ques5" />
+                <input class="answer-text center" type="text" id="ques5" />
                 <%--answer mars / Mars--%>
             </div>
+            <button id="next5" onclick="question5()" class="submit center">Check answer</button>
         </div>
 
         <!-- question 6: -->
         <div id="quesbox6" class="question-container hidden center">
             <div class="question">
                 <h3 class="center">Light year equals 500,000 kilometer?</h3>
-
                 <div class="multiple-choice">
                     <div class="center buttons-container">
                         <button onclick="question6Y()" class="true-or-false">True</button>
                         <button onclick="question6N()" class="true-or-false">False</button>
                     </div>
                 </div>
-                <button id="next6" onclick="question6()" class="submit">Check answer</button>
+                <button id="next6" onclick="question6()" class="submit center">Check answer</button>
             </div>
             <!-- answer: no -->
         </div>
         
-        <div id="grade" class="grade">
-            <h2 class="title">Good job!</h2>
-            <h3>you completed the first quiz </h3>
+        <div id="grade" class="grade center">
+            <h2 class="title center">Good job!</h2>
+            <h3 class="center">You completed the first quiz </h3>
+            <button id="show_grade" class="show-grade center" onclick="grade()">Show your grade</button>
+            <div>
+                <h1 id="final_grade" class="hidden center">/</h1>
+            </div>
             <button id="previous_level" onclick="document.location='quiz.aspx'" class="next-level">< Previous level </button>
-            <button id="next_level" onclick="document.location='quiz3.aspx'" class="next-level">Next level ></button>
+            <button id="next_level" onclick="document.location='quiz2.aspx'" class="next-level">Next level ></button>
         </div>
         
         <div class="levels-container">
