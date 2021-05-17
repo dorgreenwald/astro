@@ -1,25 +1,25 @@
-
+﻿
 var count = 0;
 
 function question1() {
-     var answer = document.getElementById("ques1").value;
-     if (document.getElementById("next1").innerText == "Check answer") {
-         document.getElementById("next1").innerText = "Next question >";
+    var answer = document.getElementById("ques1").value;
+    if (document.getElementById("next1").innerText == "Check answer") {
+        document.getElementById("next1").innerText = "Next question >";
 
-         if (answer == "8") {
-             document.getElementById("quesbox1").style.borderColor = "#3f6496";
-             count++;
-         }
-         else {
-             document.getElementById("quesbox1").style.borderColor = "#f5860f";
-         }
-     }
-     else if (document.getElementById("next1").innerText == "Next question >") {
-         {
-             document.getElementById("quesbox1").style.display = "none";
-             document.getElementById("quesbox2").style.display = "inherit";
-         }
-     }
+        if ((answer == "99.8") || (answer == "99")) {
+            document.getElementById("quesbox1").style.borderColor = "#3f6496";
+            count++;
+        }
+        else {
+            document.getElementById("quesbox1").style.borderColor = "#f5860f";
+        }
+    }
+    else if (document.getElementById("next1").innerText == "Next question >") {
+        {
+            document.getElementById("quesbox1").style.display = "none";
+            document.getElementById("quesbox2").style.display = "inherit";
+        }
+    }
 }
 
 function question2() {
@@ -27,7 +27,7 @@ function question2() {
     if (document.getElementById("next2").innerText == "Check answer") {
         document.getElementById("next2").innerText = "Next question >";
 
-        if ((answer == "venus") || (answer == "Venus")) {
+        if ((answer == "polaris") || (answer == "Polaris")) {
             document.getElementById("quesbox2").style.borderColor = "#3f6496";
             count++;
         }
@@ -52,7 +52,7 @@ function question3N() {
 function question3() {
     if (document.getElementById("next3").innerText == "Check answer") {
         document.getElementById("next3").innerText = "Next question >";
-        if (document.getElementById("next3N").style.backgroundColor == "#2f5b96") {
+        if (document.getElementById("next3Y").style.backgroundColor == "#2f5b96") {
             document.getElementById("quesbox3").style.borderColor = "#3f6496";
             count++;
         }
@@ -116,7 +116,7 @@ function question5() {
     if (document.getElementById("next5").innerText == "Check answer") {
         document.getElementById("next5").innerText = "Next question >";
 
-        if ((answer == "light years") || (answer == "Light years") || (answer == "Light Years") || (answer == "parsec") || (answer == "Parsec")) {
+        if ((answer == "helium") || (answer == "Helium")) {
             document.getElementById("quesbox5").style.borderColor = "#3f6496";
             count++;
         }
@@ -134,32 +134,28 @@ function question6Y() {
     document.getElementById("next6Y").style.backgroundColor = "#2f5b96";
 }
 function question6N() {
-    document.getElementById("next6N").style.backgroundColor = "#2f5b96";
+    document.getElementById("next6N").style.color = "#2f5b96";
 }
 function question6() {
     if (document.getElementById("next6").innerText == "Check answer") {
-        if (document.getElementById("next6N").style.backgroundColor == "#2f5b96") {
+        if (document.getElementById("quesbox6").style.backgroundColor = "#2f5b96") {
             document.getElementById("quesbox6").style.borderColor = "#3f6496";
             count++;
         }
         else {
             document.getElementById("quesbox6").style.borderColor = "#f5860f";
         }
-        document.getElementById("next6").innerText = "Finish quiz";
     }
-    else if (document.getElementById("next6").innerText == "Finish quiz") {
+    else if (document.getElementById("next6").innerText == "Next question >") {
         {
             document.getElementById("quesbox6").style.display = "none";
-            //document.getElementById("next-level").style.display = "none";
-            //document.getElementById("previous-level").style.display = "none";
+            document.getElementById("next-level").style.display = "none";
+            document.getElementById("previous-level").style.display = "none";
             document.getElementById("grade").style.display = "inherit";
         }
     }
 }
 
 function grade() {
-    document.getElementById("show_grade").style.display = "none";
-    document.getElementById("final_grade").innerText = count + " / 6";
-    document.getElementById("final_grade").style.display = "inherit";
     return count;
 }

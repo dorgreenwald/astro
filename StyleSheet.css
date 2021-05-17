@@ -13,8 +13,8 @@
 * {
     box-sizing: border-box;
     background-color: white;
-    overflow: hidden;
-}
+/*    overflow: hidden;
+*/}
 
 .all-menu-item {
     color: #414a49;
@@ -27,7 +27,7 @@
 }
 
 .title {
-    color: #51b0a8;
+    color: #3f6496;
     width: fit-content;
     font-size: 55px;
     margin: 20px auto;
@@ -74,14 +74,14 @@ body, html {
 }
 
 .submit {
-    margin: 25px 0px;
+    margin: 20px 14px;
     width: 95%;
-    font-size: 30px;
+    font-size: 25px;
     font-family: sans-serif;
     font-weight: 550;
     border: 0px;
     background-color: white;
-    color: #40998c;
+    color: #3f6496;
 }
 
 .center {
@@ -89,7 +89,7 @@ body, html {
 }
 
 .space {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     margin-top: 100px;
 }
 
@@ -112,7 +112,7 @@ a {
 }
 
 .turquiz {
-    color: #359991;
+    color: #3f6496;
 }
 
 fieldset {
@@ -290,7 +290,7 @@ button {
 
 .more-or-less-btn {
     font-size: 20px;
-    color: #359991;
+    color: #3f6496;
 }
 
 .menu-icon {
@@ -330,7 +330,7 @@ button {
 
 .required:before {
     content: "*";
-    color: #359991;
+    color: #3f6496;
 }
 
 .account-pic {
@@ -339,7 +339,7 @@ button {
 }
 
 .account-name {
-    color: #359991;
+    color: #3f6496;
     margin: 0px, 50%;
 }
 
@@ -349,7 +349,7 @@ button {
 }
 
 .level-button {
-    background-color: #4abdb5;
+    background-color: #447ac2;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -362,37 +362,91 @@ button {
 }
 
 .button2 {
-    background-color: #238c85;
+    background-color: #255392;
 }
 
 .button3 {
-    background-color: #1b5e5a;
-}
-
-.button4 {
-    background-color: #154d49;
-}
-
-.button5 {
-    background-color: #0f403b;
+    background-color: #0a336b;
 }
 
 .question {
+    padding: 20px 7%;
+}
 
+.answer-text {
+    width: 400px;
+    height: 40px;
+    margin: 100px 20% 40px 20%;
 }
 
 .answer {
-
+    width: 400px;
+    height: 40px;
+    margin: 30px 20% 20px 20%;
 }
 
 .question-container {
     border-color: black;
     border: 3px solid;
-    width: 600px;
-    height: 400px;
-    padding: 20px;
+    width: 700px;
+    height: 350px;
+    padding: 10px;
+    margin-top: 100px;
 }
 
 .next-level {
+    background-color: #447ac2;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 15px 4px;
+    cursor: pointer;
+    width: 150px;
+}
+.true-or-false {
+    background-color: #447ac2;
+    border: none;
+    color: white;
+    padding: 20px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 20px;
+    cursor: pointer;
+}
+.multiple-choice {
+
+}
+.buttons-container {
+    width: fit-content;
+    padding: 15% 10% 5% 10%;
+}
+.grade {
+    border-color: black;
+    border: 3px solid;
+    width: 700px;
+    height: 350px;
+    padding: 10px;
+    margin-top: 100px;
     display: none;
+    margin-left: 27%;
+}
+.level-change {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    width: fit-content;
+}
+.levels-container {
+    width: 100%;
+    
+}
+#btnSubmit
+{
+    margin: 10px;
 }

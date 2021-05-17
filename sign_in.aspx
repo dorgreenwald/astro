@@ -55,7 +55,7 @@
                     <img class="icon" src="pics/icons/new/planet.png">
                 </div>
                 <div class="center">
-                    <input class="submit center" type="submit" name="btnSubmit" value="SIGN UP" />
+                    <input class="submit center" type="submit" id="btnSubmit" name="btnSubmit" value="SIGN UP" />
                 </div>
             </form>
         </fieldset>

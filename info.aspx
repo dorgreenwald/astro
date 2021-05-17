@@ -92,7 +92,6 @@
                     <div>
                         <a href="https://en.wikipedia.org/wiki/Astrophysics">astrophysics-wikipedia</a>
                     </div>
-                    </p>
                 </div>
             </section>
             <section id="cosmology" class="info-text-and-pic">

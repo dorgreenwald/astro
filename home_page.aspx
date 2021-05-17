@@ -17,7 +17,7 @@
                 <div class="dropdown-content">
                     <a href="gallery.aspx">Gallery</a>
                     <a href="quiz.aspx">Quiz</a>
-                    <a href=" info.">Info</a>
+                    <a href=" info.aspx">Info</a>
                 </div>
             </div>
             <div class="sub-menu">
