@@ -352,12 +352,12 @@ button {
     background-color: #447ac2;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 60px 80px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
+    font-size: 30px;
+    margin: 30% 10px;
     cursor: pointer;
 }
 
@@ -442,9 +442,11 @@ button {
     justify-items: center;
     width: fit-content;
 }
+.levels {
+    width: fit-content;
+}
 .levels-container {
     width: 100%;
-    
 }
 #btnSubmit
 {
