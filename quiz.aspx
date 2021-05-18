@@ -36,7 +36,7 @@
             <div class="center">
                 <button onclick="document.location='quiz1.aspx'" class="level-button">1</button>
                 <button onclick="document.location='quiz2.aspx'" class="level-button button2">2</button>
-                <button onclick="document.location='quiz3.aspx" class="level-button button3">3</button>
+                <button onclick="document.location='quiz3.aspx'" class="level-button button3">3</button>
             </div>
         </fieldset>
     </div>

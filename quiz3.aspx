@@ -99,8 +99,8 @@
                 <h3 class="center question">If the North Star is Vega in what year can we be in?</h3>
                 <div>
                     <div class="center buttons-container">
-                        <button id="next61" onclick="question6Y()" class="true-or-false">10,207</button>
-                        <button id="next62" onclick="question6N()" class="true-or-false">15,643</button>
+                        <button id="next61" onclick="question61()" class="true-or-false">10,207</button>
+                        <button id="next62" onclick="question62()" class="true-or-false">15,643</button>
                     </div>
                 </div>
                 <button id="next6" onclick="question6()" class="submit check-answer center">Check answer</button>
