@@ -150,8 +150,8 @@ function question6() {
     else {
         {
             document.getElementById("quesbox6").style.display = "none";
-            //document.getElementById("next-level").style.display = "none";
-            //document.getElementById("previous-level").style.display = "none";
+            document.getElementById("next-level").style.display = "none";
+            document.getElementById("previous-level").style.display = "none";
             document.getElementById("grade").style.display = "inherit";
         }
     }

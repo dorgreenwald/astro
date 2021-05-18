@@ -55,10 +55,10 @@
 
         <!-- question 3: -->
         <div id="quesbox3" class="question-container hidden center">
-            <div class="question center">
-                <h3 class="center">All the points of light seen at night in the sky are planets?</h3>
+            <div class="center">
+                <h3 class="question center">All the points of light seen at night in the sky are planets?</h3>
 
-                <div class="multiple-choice">
+                <div>
                     <div class="center buttons-container">
                         <button onclick="question3Y()" id="next3Y" class="true-or-false">True</button>
                         <button onclick="question3N()" id="next3N" class="true-or-false">False</button>
@@ -71,21 +71,23 @@
 
         <!-- question 4: -->
         <div id="quesbox4" class="question-container hidden center">
-            <div class="question center">
-                <h3 class="center">The ring around Saturn contains mainly...</h3>
-                <button id="next41" onclick="question41()" class="level-button">Rocks</button>
-                <button id="next42" onclick="question42()" class="level-button ">Ice</button>
-                <button id="next43" onclick="question43()" class="level-button ">Gas and dust</button>
-                <button id="next44" onclick="question44()" class="level-button ">Saturn has no rings</button>
-                <%--answer ice--%>
+            <div class="center">
+                <h3 class="center question">The ring around Saturn contains mainly...</h3>
+                <div class="multiple-choice">
+                    <button id="next41" onclick="question41()" class="multiple-choice-option">Rocks</button>
+                    <button id="next42" onclick="question42()" class="multiple-choice-option ">Ice</button>
+                    <button id="next43" onclick="question43()" class="multiple-choice-option ">Gas and dust</button>
+                    <button id="next44" onclick="question44()" class="multiple-choice-option ">Saturn has no rings</button>
+                    <%--answer ice--%>
+                </div>
             </div>
             <button id="next4" onclick="question4()" class="submit center check-answer">Check answer</button>
         </div>
 
         <!-- question 5: -->
         <div id="quesbox5" class="question-container hidden center">
-            <div class="question center">
-                <h3 class="center">What is the common unit of distance in astrophysics?</h3>
+            <div class="center">
+                <h3 class="center question">What is the common unit of distance in astrophysics?</h3>
                 <input class="answer-text center" type="text" id="ques5" />
                 <%--answer light years / parsec--%>
             </div>
@@ -94,10 +96,9 @@
 
         <!-- question 6: -->
         <div id="quesbox6" class="question-container hidden center">
-            <div class="question center">
-                <h3 class="center">Have humans ever left our solar system?</h3>
-
-                <div class="multiple-choice">
+            <div class="center">
+                <h3 class="center question">Have humans ever left our solar system?</h3>
+                <div>
                     <div class="center buttons-container">
                         <button id="next6Y" onclick="question6Y()" class="true-or-false">True</button>
                         <button id="next6N" onclick="question6N()" class="true-or-false">False</button>
@@ -110,19 +111,21 @@
         
         <div id="grade" class="grade center">
             <h2 class="title center">Good job!</h2>
-            <h3 class="center">You completed the first quiz </h3>
+            <h3 class="center quiz-completed">You completed the first quiz!</h3>
             <button id="show_grade" class="show-grade center" onclick="grade()">Show your grade</button>
             <div>
-                <h1 id="final_grade" class="hidden center">/</h1>
+                <h1 id="final_grade" class="hidden center final-grade">/</h1>
             </div>
-            <button id="previous_level" onclick="document.location='quiz.aspx'" class="next-level">< Previous level </button>
-            <button id="next_level" onclick="document.location='quiz2.aspx'" class="next-level">Next level ></button>
+            <div class="level-change center">
+                <button id="previous_level" onclick="document.location='quiz.aspx'" class="next-level">< Previous level </button>
+                <button id="next_level" onclick="document.location='quiz2.aspx'" class="next-level">Next level ></button>
+            </div>
         </div>
         
         <div class="levels-container">
             <div class="level-change center">
-                <button onclick="document.location='quiz.aspx'" class="next-level center">< Previous level</button>
-                <button onclick="document.location='quiz2.aspx'" class="next-level center">Next level ></button>
+                <button onclick="document.location='quiz.aspx'" id="previous-level" class="next-level center">< Previous level</button>
+                <button onclick="document.location='quiz2.aspx'" id="next-level" class="next-level center">Next level ></button>
             </div>
         </div>
     </body>

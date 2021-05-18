@@ -423,11 +423,26 @@ button {
     cursor: pointer;
 }
 .multiple-choice {
-
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-top: 40px;
+}
+.multiple-choice-option {
+    background-color: #447ac2;
+    border: none;
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 20px;
+    cursor: pointer;
 }
 .buttons-container {
     width: fit-content;
-    padding: 15% 10% 5% 10%;
+    padding: 70px 50px 40px 50px;
 }
 .grade {
     border-color: black;
@@ -454,5 +469,24 @@ button {
 }
 .check-answer {
     width: 200px;
-    margin: 10px 35%;
+    margin: 10px 235px;
+}
+.quiz-completed {
+    width: fit-content;
+    font-size: x-large;
+}
+.show-grade {
+    width: 275px;
+    margin: 30px 200px 50px;
+    color: #0a336b;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.final-grade {
+    color: #0a336b;
+    display: inherit;
+    width: fit-content;
+    font-size: xxx-large;
+    font-weight: 900;
+    margin: 30px 275px 50px;
 }
