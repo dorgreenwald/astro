@@ -38,7 +38,7 @@
                 <input class="answer-text center" type="number" id="ques1" />
                 <!-- answer: 8 -->
             </div>
-            <button id="next1" onclick="question1()" class="submit center">Check answer</button>
+            <button id="next1" onclick="question1()" class="submit center check-answer">Check answer</button>
         </div>
 
         <!-- question 2: -->
@@ -50,7 +50,7 @@
                 <input class="answer-text center" type="text" id="ques2" />
                 <!-- answer: venus -->
             </div>
-            <button id="next2" onclick="question2()" class="submit center">Check answer</button>
+            <button id="next2" onclick="question2()" class="submit center check-answer">Check answer</button>
         </div>
 
         <!-- question 3: -->
@@ -65,7 +65,7 @@
                     </div>
                     <!-- answer: no -->
                 </div>
-                <button id="next3" onclick="question3()" class="submit center">Check answer</button>
+                <button id="next3" onclick="question3()" class="submit center check-answer">Check answer</button>
             </div>
         </div>
 
@@ -79,7 +79,7 @@
                 <button id="next44" onclick="question44()" class="level-button ">Saturn has no rings</button>
                 <%--answer ice--%>
             </div>
-            <button id="next4" onclick="question4()" class="submit center">Check answer</button>
+            <button id="next4" onclick="question4()" class="submit center check-answer">Check answer</button>
         </div>
 
         <!-- question 5: -->
@@ -89,7 +89,7 @@
                 <input class="answer-text center" type="text" id="ques5" />
                 <%--answer light years / parsec--%>
             </div>
-            <button id="next5" onclick="question5()" class="submit center">Check answer</button>
+            <button id="next5" onclick="question5()" class="submit center check-answer">Check answer</button>
         </div>
 
         <!-- question 6: -->
@@ -103,7 +103,7 @@
                         <button id="next6N" onclick="question6N()" class="true-or-false">False</button>
                     </div>
                 </div>
-                <button id="next6" onclick="question6()" class="submit center">Check answer</button>
+                <button id="next6" onclick="question6()" class="submit center check-answer">Check answer</button>
             </div>
             <!-- answer: no -->
         </div>

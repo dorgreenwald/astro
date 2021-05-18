@@ -450,3 +450,7 @@ button {
 {
     margin: 10px;
 }
+.check-answer {
+    width: 200px;
+    margin: 10px 35%;
+}
