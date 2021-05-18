@@ -30,13 +30,15 @@
         </div>
     </div>
 
-    <div id="choose-level">
-        <h2 class="center turquiz title" >Choose a level:</h2>
-        <div class="center levels">
-            <button onclick="document.location='quiz1.aspx'" class="level-button">1</button>
-            <button onclick="document.location='quiz2.aspx'" class="level-button button2">2</button>
-            <button onclick="document.location='quiz3.aspx" class="level-button button3">3</button>
-        </div>
+    <div id="choose-level" class="center levels">
+        <fieldset class="space">
+            <legend class="title">Choose a level:</legend>
+            <div class="center">
+                <button onclick="document.location='quiz1.aspx'" class="level-button">1</button>
+                <button onclick="document.location='quiz2.aspx'" class="level-button button2">2</button>
+                <button onclick="document.location='quiz3.aspx" class="level-button button3">3</button>
+            </div>
+        </fieldset>
     </div>
     
 </body>

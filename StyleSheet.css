@@ -348,16 +348,19 @@ button {
     margin-bottom: 50px;
 }
 
+.levels {
+    width: fit-content;
+}
 .level-button {
     background-color: #447ac2;
     border: none;
     color: white;
-    padding: 60px 80px;
+    padding: 50px 70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
-    margin: 30% 10px;
+    margin: 30px 10px;
     cursor: pointer;
 }
 
@@ -440,9 +443,6 @@ button {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
-    width: fit-content;
-}
-.levels {
     width: fit-content;
 }
 .levels-container {
