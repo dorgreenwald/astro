@@ -57,7 +57,6 @@
         <div id="quesbox3" class="question-container hidden center">
             <div class="center">
                 <h3 class="question center">All the points of light seen at night in the sky are planets?</h3>
-
                 <div>
                     <div class="center buttons-container">
                         <button onclick="question3Y()" id="next3Y" class="true-or-false">True</button>
@@ -109,7 +108,7 @@
             <!-- answer: no -->
         </div>
         
-        <div id="grade" class="grade center">
+        <div id="grade" class="grade center hidden">
             <h2 class="title center">Good job!</h2>
             <h3 class="center quiz-completed">You completed the first quiz!</h3>
             <button id="show_grade" class="show-grade center" onclick="grade()">Show your grade</button>
@@ -117,15 +116,15 @@
                 <h1 id="final_grade" class="hidden center final-grade">/</h1>
             </div>
             <div class="level-change center">
-                <button id="previous_level" onclick="document.location='quiz.aspx'" class="next-level">< Previous level </button>
-                <button id="next_level" onclick="document.location='quiz2.aspx'" class="next-level">Next level ></button>
+                <button onclick="document.location='quiz.aspx'" class="next-level">< Previous level </button>
+                <button onclick="document.location='quiz2.aspx'" class="next-level">Next level ></button>
             </div>
         </div>
         
         <div class="levels-container">
             <div class="level-change center">
-                <button onclick="document.location='quiz.aspx'" id="previous-level" class="next-level center">< Previous level</button>
-                <button onclick="document.location='quiz2.aspx'" id="next-level" class="next-level center">Next level ></button>
+                <button id="previous-level" onclick="document.location='quiz.aspx'" id="previous-level" class="next-level center">< Previous level</button>
+                <button id="next-level" onclick="document.location='quiz2.aspx'" id="next-level" class="next-level center">Next level ></button>
             </div>
         </div>
     </body>

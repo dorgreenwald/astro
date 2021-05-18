@@ -32,7 +32,7 @@
         <!-- question 1: -->
         <div id="quesbox1" class="question-container center">
             <div class="question center">
-                <h3 class="center">What will be the radius of the sun if it becomes a black hole? (in km)</h3>
+                <h3 class="center">What will be the radius of the as a black hole? (in km)</h3>
             </div>
             <div>
                 <input class="answer-text" type="number" id="ques1" />
@@ -55,10 +55,9 @@
 
         <!-- question 3: -->
         <div id="quesbox3" class="question-container hidden center">
-            <div class="question">
-                <h3 class="center">A red giant can become a white dwarf later in his life?</h3>
-
-                <div class="multiple-choice">
+            <div>
+                <h3 class="center question">A red giant can become a white dwarf later in his life?</h3>
+                <div>
                     <div class="center buttons-container">
                         <button onclick="question3Y()" id="next3Y" class="true-or-false">True</button>
                         <button onclick="question3N()" id="next3N" class="true-or-false">False</button>
@@ -71,21 +70,23 @@
 
         <!-- question 4: -->
         <div id="quesbox4" class="question-container hidden center">
-            <div class="question">
-                <h3 class="center">During their stay on the main series in the HR diagram, stars become...</h3>
-                <button id="next41" onclick="question41()" class="level-button">Less bright and colder</button>
-                <button id="next42" onclick="question42()" class="level-button">Brighter and hotter</button>
-                <button id="next43" onclick="question43()" class="level-button">Less bright and hotter</button>
-                <button id="next44" onclick="question44()" class="level-button">Brighter and colder</button>
-                <%--answer Brighter and colder--%>
+            <div>
+                <h3 class="center question">During their stay on the main series, stars become...</h3>
+                <div class="multiple-choice">
+                    <button id="next41" onclick="question41()" class="multiple-choice-option">Less bright and colder</button>
+                    <button id="next42" onclick="question42()" class="multiple-choice-option">Brighter and hotter</button>
+                    <button id="next43" onclick="question43()" class="multiple-choice-option">Less bright and hotter</button>
+                    <button id="next44" onclick="question44()" class="multiple-choice-option">Brighter and colder</button>
+                    <%--answer Brighter and colder--%>
+                </div>
             </div>
             <button id="next4" onclick="question4()" class="submit center check-answer">Check answer</button>
         </div>
 
         <!-- question 5: -->
         <div id="quesbox5" class="question-container hidden center">
-            <div class="question">
-                <h3 class="center">The second common element in the universe is...</h3>
+            <div>
+                <h3 class="center question">The second common element in the universe is...</h3>
                 <input class="answer-text" type="text" id="ques5" />
                 <%--answer helium / Helium --%>
             </div>
@@ -94,35 +95,36 @@
 
         <!-- question 6: -->
         <div id="quesbox6" class="question-container hidden center">
-            <div class="question">
-                <h3 class="center">If the North Star is Vega in what year can we be in?</h3>
-
-                <div class="multiple-choice">
+            <div>
+                <h3 class="center question">If the North Star is Vega in what year can we be in?</h3>
+                <div>
                     <div class="center buttons-container">
-                        <button onclick="question6Y()" class="true-or-false">10,207</button>
-                        <button onclick="question6N()" class="true-or-false">15,643</button>
+                        <button id="next61" onclick="question6Y()" class="true-or-false">10,207</button>
+                        <button id="next62" onclick="question6N()" class="true-or-false">15,643</button>
                     </div>
                 </div>
                 <button id="next6" onclick="question6()" class="submit check-answer center">Check answer</button>
             </div>
-            <!-- answer: no -->
+            <!-- answer: 15,643 -->
         </div>
         
-        <div id="grade" class="grade center">
+        <div id="grade" class="grade center hidden">
             <h2 class="title center">Good job!</h2>
-            <h3 class="center">You completed the first quiz </h3>
-            <button id="show_grade" class="show-grade center" onclick="grade()">Show your grade</button>
+            <h3 class="center quiz-completed">You completed the third quiz!</h3>
+            <button id="show-grade" class="show-grade center" onclick="grade()">Show your grade</button>
             <div>
-                <h1 id="final_grade" class="hidden center">/</h1>
+                <h1 id="final-grade" class="hidden center final-grade">/</h1>
             </div>
-            <button id="previous_level" onclick="document.location='quiz.aspx'" class="next-level">< Previous level </button>
-            <button id="next_level" onclick="document.location='quiz2.aspx'" class="next-level">Next level ></button>
+            <div class="level-change center">
+                <button onclick="document.location='quiz2.aspx'" class="next-level">< Previous level </button>
+                <button onclick="document.location='quiz.aspx'" class="next-level">Next level ></button>
+            </div>
         </div>
         
         <div class="levels-container">
             <div class="level-change center">
-                <button onclick="document.location='quiz2.aspx'" class="next-level center">< Previous level</button>
-                <button onclick="document.location='quiz.aspx'" class="next-level center">Next level ></button>
+                <button id="previous-level" onclick="document.location='quiz2.aspx'" class="next-level center">< Previous level</button>
+                <button id="next-level" onclick="document.location='quiz.aspx'" class="next-level center">Next level ></button>
             </div>
         </div>
     </body>

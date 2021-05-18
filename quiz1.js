@@ -72,19 +72,19 @@ function question41() {
     document.getElementById("next41").style.backgroundColor = "#2f5b96";
     document.getElementById("next42").style.backgroundColor = "#447ac2";
     document.getElementById("next43").style.backgroundColor = "#447ac2";
-    document.getElementById("next43").style.backgroundColor = "#447ac2";
+    document.getElementById("next44").style.backgroundColor = "#447ac2";
 }
 function question42() {
     document.getElementById("next42").style.backgroundColor = "#2f5b96";
     document.getElementById("next41").style.backgroundColor = "#447ac2";
     document.getElementById("next43").style.backgroundColor = "#447ac2";
-    document.getElementById("next43").style.backgroundColor = "#447ac2";
+    document.getElementById("next44").style.backgroundColor = "#447ac2";
 }
 function question43() {
     document.getElementById("next43").style.backgroundColor = "#2f5b96";
     document.getElementById("next41").style.backgroundColor = "#447ac2";
     document.getElementById("next42").style.backgroundColor = "#447ac2";
-    document.getElementById("next43").style.backgroundColor = "#447ac2";
+    document.getElementById("next44").style.backgroundColor = "#447ac2";
 }
 function question44() {
     document.getElementById("next44").style.backgroundColor = "#2f5b96";
@@ -132,9 +132,11 @@ function question5() {
 
 function question6Y() {
     document.getElementById("next6Y").style.backgroundColor = "#2f5b96";
+    document.getElementById("next6N").style.backgroundColor = "#447ac2";
 }
 function question6N() {
     document.getElementById("next6N").style.backgroundColor = "#2f5b96";
+    document.getElementById("next6Y").style.backgroundColor = "#447ac2";
 }
 function question6() {
     if (document.getElementById("next6").innerText == "Check answer") {
@@ -163,6 +165,8 @@ function grade() {
         document.getElementById("final_grade").style.color = "#f5860f";
     if (count > 4)
         document.getElementById("final_grade").style.color = "#3f6496";
+    if (count == 6)
+        document.getElementById("final_grade").style.color = "#0a336b";
     document.getElementById("final_grade").innerText = count + " / 6";
     document.getElementById("final_grade").style.display = "inherit";
     return count;

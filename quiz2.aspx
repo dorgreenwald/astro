@@ -44,7 +44,7 @@
         <!-- question 2: -->
         <div id="quesbox2" class="question-container hidden center">
             <div class="question center">
-                <h3 class="center">>What is the last object in our solar system?</h3>
+                <h3 class="center">What is the last object in our solar system?</h3>
             </div>
             <div>
                 <input class="answer-text center" type="text" id="ques2" />
@@ -55,15 +55,14 @@
 
         <!-- question 3: -->
         <div id="quesbox3" class="question-container hidden center">
-            <div class="question">
-                <h3 class="center">Space is completely silent?</h3>
-
-                <div class="multiple-choice">
+            <div>
+                <h3 class="center question">Space is completely silent?</h3>
+                <div>
                     <div class="center buttons-container">
                         <button onclick="question3Y()" id="next3Y" class="true-or-false">True</button>
                         <button onclick="question3N()" id="next3N" class="true-or-false">False</button>
                     </div>
-                    <!-- answer: yes -->
+                    <!-- answer: no -->
                 </div>
                 <button id="next3" onclick="question3()" class="submit center check-answer">Check answer</button>
             </div>
@@ -71,21 +70,23 @@
 
         <!-- question 4: -->
         <div id="quesbox4" class="question-container hidden center">
-            <div class="question">
-                <h3 class="center">If two pieces of the same type of metal touch in space...</h3>
-                <button id="next41" onclick="question41()" class="level-button">They will collide with each other at high speed</button>
-                <button id="next42" onclick="question42()" class="level-button">They will bond and be permanently stuck together</button>
-                <button id="next43" onclick="question43()" class="level-button">They will push each other away from each other</button>
-                <button id="next44" onclick="question44()" class="level-button">They will both explode</button>
-                <%--answer They will bond and be permanently stuck together--%>
+            <div>
+                <h3 class="center question">Our sun is a star from type...</h3>
+                <div class="multiple-choice">
+                    <button id="next41" onclick="question41()" class="multiple-choice-option">A</button>
+                    <button id="next42" onclick="question42()" class="multiple-choice-option">G</button>
+                    <button id="next43" onclick="question43()" class="multiple-choice-option">M</button>
+                    <button id="next44" onclick="question44()" class="multiple-choice-option">F</button>
+                    <%--answer G --%>
+                </div>
             </div>
             <button id="next4" onclick="question4()" class="submit center check-answer">Check answer</button>
         </div>
 
         <!-- question 5: -->
         <div id="quesbox5" class="question-container hidden center">
-            <div class="question">
-                <h3 class="center">Where is the highest mountain in our solar system?</h3>
+            <div>
+                <h3 class="center question">Where is the highest mountain in our solar system?</h3>
                 <input class="answer-text center" type="text" id="ques5" />
                 <%--answer mars / Mars--%>
             </div>
@@ -94,35 +95,37 @@
 
         <!-- question 6: -->
         <div id="quesbox6" class="question-container hidden center">
-            <div class="question">
-                <h3 class="center">Light year equals 500,000 kilometer?</h3>
-                <div class="multiple-choice">
+            <div>
+                <h3 class="center question">Light second equals 300,000 kilometer?</h3>
+                <div>
                     <div class="center buttons-container">
-                        <button onclick="question6Y()" class="true-or-false">True</button>
-                        <button onclick="question6N()" class="true-or-false">False</button>
+                        <button id="next6Y" onclick="question6Y()" class="true-or-false">True</button>
+                        <button id="next6N" onclick="question6N()" class="true-or-false">False</button>
                     </div>
                 </div>
                 <button id="next6" onclick="question6()" class="submit center check-answer">Check answer</button>
             </div>
-            <!-- answer: no -->
+            <!-- answer: yes -->
         </div>
         
-        <div id="grade" class="grade center">
+        <div id="grade" class="grade center hidden">
             <h2 class="title center">Good job!</h2>
-            <h3 class="center">You completed the first quiz </h3>
+            <h3 class="center quiz-completed">You completed the second quiz!</h3>
             <button id="show_grade" class="show-grade center" onclick="grade()">Show your grade</button>
             <div>
-                <h1 id="final_grade" class="hidden center">/</h1>
+                <h1 id="final_grade" class="hidden center final-grade">/</h1>
             </div>
-            <button id="previous_level" onclick="document.location='quiz.aspx'" class="next-level">< Previous level </button>
-            <button id="next_level" onclick="document.location='quiz2.aspx'" class="next-level">Next level ></button>
+            <div class="level-change center">
+                <button onclick="document.location='quiz1.aspx'" class="next-level">< Previous level </button>
+                <button onclick="document.location='quiz3.aspx'" class="next-level">Next level ></button>
+            </div>
         </div>
         
         <div class="levels-container">
             <div class="level-change center">
-                <button onclick="document.location='quiz1.aspx'" class="next-level center">< Previous level</button>
-                <button onclick="document.location='quiz3.aspx'" class="next-level center">Next level ></button>
+                <button id="previous-level" onclick="document.location='quiz1.aspx'" class="next-level center">< Previous level</button>
+                <button id="next-level" onclick="document.location='quiz3.aspx'" class="next-level center">Next level ></button>
             </div>
         </div>
-</body>
+    </body>
 </html>
