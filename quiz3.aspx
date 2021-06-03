@@ -9,7 +9,7 @@
         <link rel="javascript" href="quiz3.js" />
         <script type="text/JavaScript" src="quiz3.js"></script>
     </head>
-    <body class="backgraund">
+    <body class="backgraund no-scroll">
         <div class="Upper-tab">
             <div class="dropdown">
                 <div class="dropbtn all-menu-item">
@@ -62,7 +62,7 @@
                         <button onclick="question3Y()" id="next3Y" class="true-or-false">True</button>
                         <button onclick="question3N()" id="next3N" class="true-or-false">False</button>
                     </div>
-                    <!-- answer: no -->
+                    <!-- answer: yes -->
                 </div>
                 <button id="next3" onclick="question3()" class="submit center check-answer">Check answer</button>
             </div>

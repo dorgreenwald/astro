@@ -16,6 +16,10 @@
 /*    overflow: hidden;
 */}
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .all-menu-item {
     color: #414a49;
     padding: 20px 17px;
@@ -28,9 +32,16 @@
 
 .title {
     color: #3f6496;
-    width: fit-content;
     font-size: 55px;
     margin: 20px auto;
+    display: block;
+    width: fit-content;
+}
+
+.small-title {
+    color: #3f6496;
+    font-size: 25px;
+    margin: 10px auto;
     display: block;
 }
 
@@ -42,6 +53,7 @@ form input, select {
     color: #2b2a2a;
     border: 0px;
     font-size: 16px;
+    width: 90%;
 }
 
 .input-container {
@@ -156,6 +168,7 @@ fieldset {
 
 .sign-in-size {
     max-width: 600px;
+    padding-top: 50px;
 }
 
 button {
@@ -172,7 +185,7 @@ button {
     top: 50%;
     left: 50%;
     width: 650px;
-    height: 550px;
+    height: 500px;
     margin-top: -300px;
     margin-left: -325px;
     border: #424242 2px solid;
@@ -286,6 +299,7 @@ button {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    background-color: white;
 }
 
 .more-or-less-btn {
@@ -340,7 +354,22 @@ button {
 
 .account-name {
     color: #3f6496;
-    margin: 0px, 50%;
+    padding: 5px 5px 15px;
+    font-size: x-large;
+    width: fit-content;
+    display: block;
+}
+
+.account-content {
+    position: fixed;
+    right: 20px;
+}
+
+.log-out {
+    margin: 10px 5px;
+    font-size: large;
+    display: block;
+    font-weight: lighter;
 }
 
 .end_of_info {
@@ -488,4 +517,57 @@ button {
     font-size: xxx-large;
     font-weight: 900;
     margin: 30px 275px 50px;
+}
+.read-more {
+    font-size: large;
+    font-weight: 500;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.start-quiz {
+    background-color: #447ac2;
+    border: none;
+    color: white;
+    padding: 25px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    width: 250px;
+}
+
+.log-in-and-sign-in {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.home-page-registeration {
+    width: 80%;
+    margin: 10%;
+    display: inline;
+    height: 345px;
+}
+.home-page-sign-in {
+    color: #447ac2;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 45px;
+    cursor: pointer;
+    width: 200px;
+    margin: 30px 200px;
+    font-weight: 600;
+}
+.new-in-astro {
+    font-weight: 400;
+}
+.welcome {
+    font-size: 80px;
+    font-weight: 600;
+}
+.why-to-join {
+    font-size: 20px;
+    padding: 2px;
 }

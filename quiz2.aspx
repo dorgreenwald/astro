@@ -9,7 +9,7 @@
     <link rel="javascript" href="quiz2.js" />
     <script type="text/JavaScript" src="quiz2.js"></script>
 </head>
-<body class="backgraund">
+<body class="backgraund no-scroll">
     <div class="Upper-tab">
         <div class="dropdown">
             <div class="dropbtn all-menu-item">

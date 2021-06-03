@@ -52,7 +52,7 @@ function question3N() {
 function question3() {
     if (document.getElementById("next3").innerText == "Check answer") {
         document.getElementById("next3").innerText = "Next question >";
-        if (document.getElementById("next3N").style.backgroundColor == "rgb(47, 91, 150)") {
+        if (document.getElementById("next3Y").style.backgroundColor == "rgb(47, 91, 150)") {
             document.getElementById("quesbox3").style.borderColor = "#3f6496";
             count++;
         }

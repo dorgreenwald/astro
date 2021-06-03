@@ -7,7 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="StyleSheet.css" />
 </head>
-<body class="backgraund">
+<body class="backgraund no-scroll">
     <div class="Upper-tab">
         <a class="large-link gray" href="home_page.aspx">
         < Back to home</a>

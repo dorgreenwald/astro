@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="backgraund">
+<body class="backgraund no-scroll">
     <a id="top"></a>
     <div class="Upper-tab">
         <div class="dropdown">
@@ -41,7 +41,7 @@
                 <h2 class="title">Astronomy</h2>
                 <div>
                     <img class="info-pic-float" src="pics/gallery/hubble photos/nebula12.jpg" width="30%" />
-                    <p> is a natural science that studies celestial objects and phenomena. It uses mathematics, physics,
+                    <p> Astronomy is a natural science that studies celestial objects and phenomena. It uses mathematics, physics,
                         and chemistry in order to explain their origin and evolution. </p>
                     <p> Objects of interest include planets, moons, stars, nebulae, galaxies, and comets. Relevant phenomena include 
                         supernova explosions, gamma ray bursts, quasars, blazars, pulsars, and cosmic microwave background
@@ -72,8 +72,7 @@
                         space". </p>
                     <p> Among the objects studied are the Sun, other stars, galaxies, extrasolar
                         planets, the interstellar medium and the <a href="https://en.wikipedia.org/wiki/Cosmic_microwave_background">cosmic microwave background</a>. </p>
-                    <p> Their emissions
-                        are examined across all parts of the electromagnetic spectrum, and the properties examined
+                    <p> Their emissions are examined across all parts of the electromagnetic spectrum, and the properties examined
                         include luminosity, density, temperature, and chemical composition. </p>
                     <p> Because astrophysics is a very broad subject, astrophysicists typically apply many disciplines of physics,
                         including mechanics, electromagnetism, statistical mechanics, thermodynamics, quantum mechanics,
@@ -122,7 +121,7 @@
             <section id="astrobiology" class="info-text-and-pic">
                 <h2 class="title">Astrobiology</h2>
                 <div>
-                    <img class="info-pic-float" src="pics/gallery/not real/planet-4 .jpg" width="30%" />
+                    <img class="info-pic-float" src="pics/gallery/not real/planet5.jpg" width="30%" />
                     <p> Astrobiology, formerly known as exobiology,
                         is an interdisciplinary scientific field that studies the origins,
                         early evolution, distribution, and future of life in the universe. </p>

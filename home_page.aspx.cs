@@ -20,7 +20,7 @@ public partial class home_page : System.Web.UI.Page
             aSignIn.Visible = false;
         }
         else
-        { 
+        {
             title = "welcome to astro";
             name = "guest";
             lblTitle.Text = title;
@@ -33,5 +33,6 @@ public partial class home_page : System.Web.UI.Page
         {
             Session.Abandon();
         }
+
     }
 }
