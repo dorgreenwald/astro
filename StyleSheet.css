@@ -303,8 +303,11 @@ button {
 }
 
 .more-or-less-btn {
-    font-size: 20px;
+    width: fit-content;
+    font-size: 30px;
     color: #3f6496;
+    padding: 10px;
+    font-weight: bolder;
 }
 
 .menu-icon {
@@ -362,7 +365,8 @@ button {
 
 .account-content {
     position: fixed;
-    right: 20px;
+    right: 255px;
+    margin-top: 10px;
 }
 
 .log-out {
@@ -521,6 +525,7 @@ button {
 .read-more {
     font-size: large;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .pointer {

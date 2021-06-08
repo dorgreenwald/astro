@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="quiz1.aspx.cs" Inherits="quiz1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" %>
 
 <!DOCTYPE html>
 
@@ -10,24 +10,6 @@
     <script type="text/JavaScript" src="quiz1.js"></script>
 </head>
 <body class="backgraund no-scroll">
-    <div class="Upper-tab">
-        <div class="dropdown">
-            <div class="dropbtn all-menu-item">
-                <img class="menu-icon" src="pics/icons/new/menu.png" />
-            </div>
-            <div class="dropdown-content">
-                <a href="gallery.aspx">Gallery</a>
-                <a href="quiz.aspx">Quiz</a>
-                <a href="info.aspx">Info</a>
-            </div>
-        </div>
-        <div class="sub-menu">
-            <a href="home_page.aspx" class="all-menu-item">Home</a>
-            <asp:HyperLink NavigateUrl="~/log_in.aspx" ID="aLogIn" CssClass="all-menu-item" Text="Log in" runat="server" />
-            <asp:HyperLink NavigateUrl="~/sign_in.aspx" ID="aSignIn" CssClass="all-menu-item" Text="Sign in" runat="server" />
-            <asp:Label class="all-menu-item" ID="account" runat="server" />
-        </div>
-    </div>
 
         <!-- question 1: -->
         <div id="quesbox1" class="question-container center">

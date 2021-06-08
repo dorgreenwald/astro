@@ -24,5 +24,6 @@ public partial class quiz : System.Web.UI.Page
             aSignIn.Visible = true;
         }
         account.Text = name;
+
     }
 }

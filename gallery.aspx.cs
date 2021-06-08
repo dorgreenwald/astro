@@ -24,5 +24,10 @@ public partial class gallery : System.Web.UI.Page
             aSignIn.Visible = true;
         }
         account.Text = name;
+
+        if (Session["name"] == null)
+        {
+            btn_more_or_less_pics.Visible = false;
+        }
     }
 }

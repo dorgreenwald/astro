@@ -27,8 +27,16 @@
             <a href="home_page.aspx" class="all-menu-item">Home</a>
             <asp:HyperLink NavigateUrl="~/log_in.aspx" id ="aLogIn" CssClass="all-menu-item" text="Log in" runat="server" />
             <asp:HyperLink NavigateUrl="~/sign_in.aspx" id ="aSignIn" CssClass="all-menu-item" text="Sign in" runat="server" />
-            <asp:Label class="all-menu-item" id="account" runat="server"/>
-        </div>
+            <div class="dropdown">
+                    <div class="dropbtn">
+                        <img src="pics/icons/new/user.png" class="account-pic" />
+                    </div>
+                    <div class="dropdown-content center account-content">
+                        <asp:Label class="all-menu-item center account-name" ID="account" runat="server" />
+                        <button class="button log-out" id="btnLogOut" name="btnLogOut">Log out</button>
+                        <button onclick="document.location='log_in.aspx'" class="button log-out">Switch account</button>
+                    </div>
+                </div>        </div>
     </div>
     <div class="info">
         <!--<div class="menu">

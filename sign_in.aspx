@@ -40,7 +40,7 @@
                     <asp:Label class="red" ID="lblmsg" runat="server"></asp:Label>
                 </div>
                 <div class="input-container required">
-                    <select class="select-field" id="level" name="level" required>
+                    <select class="select-field" id="level" name="level">
                         <option value="1" hidden>Knowledge level</option>
                         <option id="1" value="1">First time</option>
                         <option id="2" value="2">Hobby</option>

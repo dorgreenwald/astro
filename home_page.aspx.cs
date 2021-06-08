@@ -32,6 +32,8 @@ public partial class home_page : System.Web.UI.Page
         if (Request.Form["btnLogOut"] != null)
         {
             Session.Abandon();
+            Session.Clear();
+            Response.Redirect("log_in.aspx"); 
         }
 
     }
