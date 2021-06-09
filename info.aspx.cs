@@ -24,5 +24,18 @@ public partial class _Default : System.Web.UI.Page
             aSignIn.Visible = true;
         }
         account.Text = name;
+
+        if (Request.Form["btnLogOut"] != null)
+        {
+            Session.Abandon();
+            Session.Clear();
+            Response.Redirect("info.aspx");
+        }
+
+        if (Request.Form["btnSwitchAccount"] != null)
+        {
+            Response.Redirect("log_in.aspx");
+
+        }
     }
 }

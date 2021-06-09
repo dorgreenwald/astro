@@ -264,6 +264,7 @@ button {
     float: left;
     overflow: hidden;
     height: 50px;
+    margin-top: -10px;
 }
 
     .dropdown .dropbtn {
@@ -365,9 +366,9 @@ button {
 }
 
 .account-content {
-    position: fixed;
-    right: 55px;
+    position: absolute;
     margin-top: 10px;
+    margin-left: -50px;
 }
 
 .log-out {

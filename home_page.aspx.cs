@@ -33,8 +33,13 @@ public partial class home_page : System.Web.UI.Page
         {
             Session.Abandon();
             Session.Clear();
-            Response.Redirect("log_in.aspx"); 
+            Response.Redirect("home_page.aspx"); 
         }
 
+        if (Request.Form["btnSwitchAccount"] != null)
+        {
+            Response.Redirect("log_in.aspx");
+
+        }
     }
 }

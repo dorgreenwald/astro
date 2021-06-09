@@ -32,7 +32,7 @@
                 <div class="dropdown-content center account-content">
                     <asp:Label class="all-menu-item center account-name" ID="account" runat="server" />
                     <button class="button log-out" id="btnLogOut" name="btnLogOut">Log out</button>
-                    <button onclick="document.location='log_in.aspx'" class="button log-out">Switch account</button>
+                        <button id="btnSwitchAccount" name="btnSwitchAccount" class="button log-out">Switch account</button>
                 </div>
             </div>
         </div>

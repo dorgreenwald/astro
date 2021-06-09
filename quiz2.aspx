@@ -20,7 +20,7 @@
                 <input class="answer-text" type="number" id="ques1" />
                 <!-- answer: 99 / 99.8 -->
             </div>
-            <button id="next1" onclick="question1()" class="submit center check-answer">Check answer</button>
+            <button id="next1" onclick="question1()" class="submit center check-answer pointer">Check answer</button>
         </div>
 
         <!-- question 2: -->
@@ -32,7 +32,7 @@
                 <input class="answer-text center" type="text" id="ques2" />
                 <!-- answer: oort cloud / the oort cloud -->
             </div>
-            <button id="next2" onclick="question2()" class="submit center check-answer">Check answer</button>
+            <button id="next2" onclick="question2()" class="submit center check-answer pointer">Check answer</button>
         </div>
 
         <!-- question 3: -->
@@ -46,7 +46,7 @@
                     </div>
                     <!-- answer: no -->
                 </div>
-                <button id="next3" onclick="question3()" class="submit center check-answer">Check answer</button>
+                <button id="next3" onclick="question3()" class="submit center check-answer pointer">Check answer</button>
             </div>
         </div>
 
@@ -62,7 +62,7 @@
                     <%--answer G --%>
                 </div>
             </div>
-            <button id="next4" onclick="question4()" class="submit center check-answer">Check answer</button>
+            <button id="next4" onclick="question4()" class="submit center check-answer pointer">Check answer</button>
         </div>
 
         <!-- question 5: -->
@@ -72,7 +72,7 @@
                 <input class="answer-text center" type="text" id="ques5" />
                 <%--answer mars / Mars--%>
             </div>
-            <button id="next5" onclick="question5()" class="submit center check-answer">Check answer</button>
+            <button id="next5" onclick="question5()" class="submit center check-answer pointer">Check answer</button>
         </div>
 
         <!-- question 6: -->
@@ -85,7 +85,7 @@
                         <button id="next6N" onclick="question6N()" class="true-or-false">False</button>
                     </div>
                 </div>
-                <button id="next6" onclick="question6()" class="submit center check-answer">Check answer</button>
+                <button id="next6" onclick="question6()" class="submit center check-answer pointer">Check answer</button>
             </div>
             <!-- answer: yes -->
         </div>
@@ -93,7 +93,7 @@
         <div id="grade" class="grade center hidden">
             <h2 class="title center">Good job!</h2>
             <h3 class="center quiz-completed">You completed the second quiz!</h3>
-            <button id="show_grade" class="show-grade center" onclick="grade()">Show your grade</button>
+            <button id="show_grade" class="show-grade center pointer" onclick="grade()">Show your grade</button>
             <div>
                 <h1 id="final_grade" class="hidden center final-grade">/</h1>
             </div>

@@ -25,9 +25,21 @@ public partial class gallery : System.Web.UI.Page
         }
         account.Text = name;
 
+        if (Request.Form["btnLogOut"] != null)
+        {
+            Session.Abandon();
+            Session.Clear();
+            Response.Redirect("gallery.aspx");
+        }
+
+        if (Request.Form["btnSwitchAccount"] != null)
+        {
+            Response.Redirect("log_in.aspx");
+
+        }
+
         if (Session["name"] == null)
         {
-            btn_more_or_less_pics.Visible = false;
             pic1.Visible = false;
             pic2.Visible = false;
             pic3.Visible = false;

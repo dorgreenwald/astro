@@ -28,7 +28,7 @@
                         <asp:Label Class="red" ID="loginFailed" runat="server"></asp:Label>
                     </div>
                     <div class="center">
-                        <input class="submit" type="submit" id="btnEnter" name="btnEnter" value="LOG IN" />
+                        <input class="submit pointer" type="submit" id="btnEnter" name="btnEnter" value="LOG IN" />
                     </div>
                 </form>
             </fieldset>

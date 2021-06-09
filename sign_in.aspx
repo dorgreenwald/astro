@@ -39,7 +39,7 @@
                 <div>
                     <asp:Label class="red" ID="lblmsg" runat="server"></asp:Label>
                 </div>
-                <div class="input-container required">
+                <div class="input-container">
                     <select class="select-field" id="level" name="level">
                         <option value="1" hidden>Knowledge level</option>
                         <option id="1" value="1">First time</option>
@@ -55,7 +55,7 @@
                     <img class="icon" src="pics/icons/planet.png">
                 </div>
                 <div class="center">
-                    <input class="submit center" type="submit" id="btnSubmit" name="btnSubmit" value="SIGN UP" />
+                    <input class="submit center pointer" type="submit" id="btnSubmit" name="btnSubmit" value="SIGN UP" />
                 </div>
             </form>
         </fieldset>

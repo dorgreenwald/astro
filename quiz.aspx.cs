@@ -25,5 +25,17 @@ public partial class quiz : System.Web.UI.Page
         }
         account.Text = name;
 
+        if (Request.Form["btnLogOut"] != null)
+        {
+            Session.Abandon();
+            Session.Clear();
+            Response.Redirect("quiz.aspx");
+        }
+
+        if (Request.Form["btnSwitchAccount"] != null)
+        {
+            Response.Redirect("log_in.aspx");
+
+        }
     }
 }

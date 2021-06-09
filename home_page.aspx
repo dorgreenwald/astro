@@ -9,36 +9,38 @@
     <script type="text/JavaScript" src="Gallery.js"></script>
 </head>
 <body class="background">
-    <div class="Upper-tab">
-        <div class="dropdown">
-            <div class="dropbtn">
-                <img class="menu-icon" src="pics/icons/menu.png" />
-            </div>
-            <div class="dropdown-content">
-                <a href="gallery.aspx">Gallery</a>
-                <a href="quiz.aspx">Quiz</a>
-                <a href=" info.aspx">Info</a>
-            </div>
-        </div>
-        <div class="sub-menu">
-            <a href="home_page.aspx" class="all-menu-item">Home</a>
-            <asp:HyperLink NavigateUrl="~/log_in.aspx" ID="aLogIn" CssClass="all-menu-item" Text="Log in" runat="server" />
-            <asp:HyperLink NavigateUrl="~/sign_in.aspx" ID="aSignIn" CssClass="all-menu-item" Text="Sign in" runat="server" />
+    <form runat="server">
+        <div class="Upper-tab">
             <div class="dropdown">
                 <div class="dropbtn">
-                    <img src="pics/icons/user.png" class="account-pic" />
+                    <img class="menu-icon" src="pics/icons/menu.png" />
                 </div>
-                <div class="dropdown-content center account-content">
-                    <asp:Label class="all-menu-item center account-name" ID="account" runat="server" />
-                    <button class="button log-out" id="btnLogOut" name="btnLogOut">Log out</button>
-                    <button onclick="document.location='log_in.aspx'" class="button log-out">Switch account</button>
+                <div class="dropdown-content">
+                    <a href="gallery.aspx">Gallery</a>
+                    <a href="quiz.aspx">Quiz</a>
+                    <a href=" info.aspx">Info</a>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <a href="home_page.aspx" class="all-menu-item">Home</a>
+                <asp:HyperLink NavigateUrl="~/log_in.aspx" ID="aLogIn" CssClass="all-menu-item" Text="Log in" runat="server" />
+                <asp:HyperLink NavigateUrl="~/sign_in.aspx" ID="aSignIn" CssClass="all-menu-item" Text="Sign in" runat="server" />
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <img src="pics/icons/user.png" class="account-pic" />
+                    </div>
+                    <div class="dropdown-content center account-content">
+                        <asp:Label class="all-menu-item center account-name" ID="account" runat="server" />
+                        <button class="button log-out" id="btnLogOut" name="btnLogOut">Log out</button>
+                        <button id="btnSwitchAccount" name="btnSwitchAccount" class="button log-out">Switch account</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="center">
-        <asp:Label class="title welcome" ID="lblTitle" runat="server" />
-    </div>
+        <div class="center">
+            <asp:Label class="title welcome" ID="lblTitle" runat="server" />
+        </div>
+    </form>
     <%-- info --%>
     <div class="info-text-and-pic">
         <div>
@@ -72,7 +74,7 @@
 
     <%-- gallary --%>
     <div>
-        <h1 onclick="document.location='gallary.aspx'" class="title pointer">Gallery</h1>
+        <h1 onclick="document.location='gallery.aspx'" class="title pointer">Gallery</h1>
         <div class="speacial-pics center">
             <button class="pics-button" onclick="hidden_galaxy()">
                 <img class="speacial-pic" src="pics/gallery/hubble photos/galaxy3.jpg" width="200px" height="175px" />
@@ -90,7 +92,7 @@
             <button class="pics-button" onclick="hidden_nebula()">
                 <img class="speacial-pic" src="pics/gallery/hubble photos/nebula7.jpg" width="200px" height="175px" />
                 <div class="center-text">
-                    <div class="pics-text">nebulas</div>
+                    <div class="pics-text">Nebulas</div>
                 </div>
             </button>
             <button class="pics-button" onclick="hidden_blackHole()">
@@ -177,7 +179,7 @@
 
         <%-- quiz --%>
         <div>
-            <h1 class="title pointer">Quiz</h1>
+            <h1 class="title">Quiz</h1>
             <div class="center" style="width: fit-content;">
                 <button class="start-quiz center" onclick="location.href='quiz.aspx'">Start quiz ></button>
             </div>
@@ -209,5 +211,6 @@
             </fieldset>
         </div>
     </div>
+
 </body>
 </html>

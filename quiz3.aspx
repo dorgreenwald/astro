@@ -14,13 +14,13 @@
         <!-- question 1: -->
         <div id="quesbox1" class="question-container center">
             <div class="question center">
-                <h3 class="center">What will be the radius of the as a black hole? (in km)</h3>
+                <h3 class="center">What will be the radius of the sun as a black hole? (in km)</h3>
             </div>
             <div>
                 <input class="answer-text" type="number" id="ques1" />
                 <!-- answer: 3 -->
             </div>
-            <button id="next1" onclick="question1()" class="submit center check-answer">Check answer</button>
+            <button id="next1" onclick="question1()" class="submit center check-answer pointer">Check answer</button>
         </div>
 
         <!-- question 2: -->
@@ -32,7 +32,7 @@
                 <input class="answer-text" type="text" id="ques2" />
                 <!-- answer: polaris / Polaris -->
             </div>
-            <button id="next2" onclick="question2()" class="submit center check-answer">Check answer</button>
+            <button id="next2" onclick="question2()" class="submit center check-answer pointer">Check answer</button>
         </div>
 
         <!-- question 3: -->
@@ -46,7 +46,7 @@
                     </div>
                     <!-- answer: yes -->
                 </div>
-                <button id="next3" onclick="question3()" class="submit center check-answer">Check answer</button>
+                <button id="next3" onclick="question3()" class="submit center check-answer pointer">Check answer</button>
             </div>
         </div>
 
@@ -62,7 +62,7 @@
                     <%--answer Brighter and colder--%>
                 </div>
             </div>
-            <button id="next4" onclick="question4()" class="submit center check-answer">Check answer</button>
+            <button id="next4" onclick="question4()" class="submit center check-answer pointer">Check answer</button>
         </div>
 
         <!-- question 5: -->
@@ -72,20 +72,20 @@
                 <input class="answer-text" type="text" id="ques5" />
                 <%--answer helium / Helium --%>
             </div>
-            <button id="next5" onclick="question5()" class="submit center check-answer">Check answer</button>
+            <button id="next5" onclick="question5()" class="submit center check-answer pointer">Check answer</button>
         </div>
 
         <!-- question 6: -->
         <div id="quesbox6" class="question-container hidden center">
             <div>
-                <h3 class="center question">If the North Star is Vega in what year can we be in?</h3>
+                <h3 class="center question">If the North Star is "Vega", in what year can we be in?</h3>
                 <div>
                     <div class="center buttons-container">
                         <button id="next61" onclick="question61()" class="true-or-false">10,207</button>
                         <button id="next62" onclick="question62()" class="true-or-false">15,643</button>
                     </div>
                 </div>
-                <button id="next6" onclick="question6()" class="submit check-answer center">Check answer</button>
+                <button id="next6" onclick="question6()" class="submit check-answer center pointer">Check answer</button>
             </div>
             <!-- answer: 15,643 -->
         </div>
@@ -93,7 +93,7 @@
         <div id="grade" class="grade center hidden">
             <h2 class="title center">Good job!</h2>
             <h3 class="center quiz-completed">You completed the third quiz!</h3>
-            <button id="show-grade" class="show-grade center" onclick="grade()">Show your grade</button>
+            <button id="show-grade" class="show-grade center pointer" onclick="grade()">Show your grade</button>
             <div>
                 <h1 id="final-grade" class="hidden center final-grade">/</h1>
             </div>
