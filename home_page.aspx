@@ -12,7 +12,7 @@
     <div class="Upper-tab">
         <div class="dropdown">
             <div class="dropbtn">
-                <img class="menu-icon" src="pics/icons/new/menu.png" />
+                <img class="menu-icon" src="pics/icons/menu.png" />
             </div>
             <div class="dropdown-content">
                 <a href="gallery.aspx">Gallery</a>
@@ -26,7 +26,7 @@
             <asp:HyperLink NavigateUrl="~/sign_in.aspx" ID="aSignIn" CssClass="all-menu-item" Text="Sign in" runat="server" />
             <div class="dropdown">
                 <div class="dropbtn">
-                    <img src="pics/icons/new/user.png" class="account-pic" />
+                    <img src="pics/icons/user.png" class="account-pic" />
                 </div>
                 <div class="dropdown-content center account-content">
                     <asp:Label class="all-menu-item center account-name" ID="account" runat="server" />
@@ -103,7 +103,7 @@
         <div id="overlay" onclick="exit()">
             <div class="hidden center-window" id="more_info_galaxys" onclick="event.stopPropagation()">
                 <button onclick="exit()">
-                    <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px" />
+                    <img class="exit" src="pics/icons/exit.png" width="20px" height="20px" />
                 </button>
                 <h1 class="title">Galaxies</h1>
                 <div>
@@ -120,7 +120,7 @@
             </div>
             <div class="hidden center-window" id="more_info_blackHoles" onclick="event.stopPropagation()">
                 <button onclick="exit()">
-                    <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px" />
+                    <img class="exit" src="pics/icons/exit.png" width="20px" height="20px" />
                 </button>
                 <h1 class="title">Black Holes</h1>
                 <div>
@@ -135,7 +135,7 @@
             </div>
             <div class="hidden center-window" id="more_info_nebulas" onclick="event.stopPropagation()">
                 <button onclick="exit()">
-                    <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px" />
+                    <img class="exit" src="pics/icons/exit.png" width="20px" height="20px" />
                 </button>
                 <h1 class="title">Nebulas</h1>
                 <div>
@@ -155,7 +155,7 @@
             </div>
             <div class="hidden center-window" id="more_info_solarSystem" onclick="event.stopPropagation()">
                 <button onclick="exit()">
-                    <img class="exit" src="pics/icons/new/exit.png" width="20px" height="20px" />
+                    <img class="exit" src="pics/icons/exit.png" width="20px" height="20px" />
                 </button>
                 <h1 class="title">Our solar system</h1>
                 <div>

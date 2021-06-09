@@ -22,19 +22,19 @@
             <form class="styled-form" id="signIn" runat="server">
                 <div class="input-container required">
                     <input type="text" id="name" name="name" placeholder=" Name" required/>
-                    <img class="icon" src="pics/icons/new/user.png">
+                    <img class="icon" src="pics/icons/user.png">
                 </div>
                 <div class="input-container required">
                     <input type="email" id="email" name="email" placeholder=" Email" required/>
-                    <img class="icon" src="pics/icons/new/email.png">
+                    <img class="icon" src="pics/icons/email.png">
                 </div>
                 <div class="input-container required">
                     <input type="password" id="password" name="password" placeholder=" Password" required/>
-                    <img class="icon" src="pics/icons/new/password.png">
+                    <img class="icon" src="pics/icons/password.png">
                 </div>
                 <div class="input-container required">
                     <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Confirm password" required/>
-                    <img class="icon" src="pics/icons/new/password.png">
+                    <img class="icon" src="pics/icons/password.png">
                 </div>
                 <div>
                     <asp:Label class="red" ID="lblmsg" runat="server"></asp:Label>
@@ -48,11 +48,11 @@
                         <option id="4" value="4">Know a lot</option>
                         <option id="5" value="5">Expert</option>
                     </select>
-                    <img class="icon" src="pics/icons/new/knowledge.png">
+                    <img class="icon" src="pics/icons/knowledge.png">
                 </div>
                 <div class="input-container">
                     <input type="text" id="planet" name="planet" placeholder=" Favorite planet" />
-                    <img class="icon" src="pics/icons/new/planet.png">
+                    <img class="icon" src="pics/icons/planet.png">
                 </div>
                 <div class="center">
                     <input class="submit center" type="submit" id="btnSubmit" name="btnSubmit" value="SIGN UP" />

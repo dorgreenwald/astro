@@ -9,8 +9,7 @@
 </head>
 <body class="backgraund no-scroll">
     <div class="Upper-tab">
-        <a class="large-link gray" href="home_page.aspx">
-        < Back to home</a>
+        <a class="large-link gray" href="home_page.aspx">< Back to home</a>
     </div>
     <div>
         <div class="center log-in-size">
@@ -19,18 +18,17 @@
                 <form id="logIn" runat="server">
                     <div class="input-container">
                         <input type="email" id="email" name="email" placeholder="Email" />
-                        <img class="icon" src="pics/icons/new/email.png"/>
+                        <img class="icon" src="pics/icons/email.png"/>
                     </div>
                     <div class="input-container">
                         <input type="password" id="password" name="password" placeholder="Password" />
-                        <img class="icon" src="pics/icons/new/password.png"/>
+                        <img class="icon" src="pics/icons/password.png"/>
                     </div>
                     <div>
                         <asp:Label Class="red" ID="loginFailed" runat="server"></asp:Label>
                     </div>
                     <div class="center">
                         <input class="submit" type="submit" id="btnEnter" name="btnEnter" value="LOG IN" />
-
                     </div>
                 </form>
             </fieldset>
@@ -38,4 +36,4 @@
         </div>
     </div>
 </body>
-</html>
+</html> 

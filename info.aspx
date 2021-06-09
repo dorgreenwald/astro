@@ -15,7 +15,7 @@
     <div class="Upper-tab">
         <div class="dropdown">
             <div class="dropbtn all-menu-item">
-                <img class="menu-icon" src="pics/icons/new/menu.png" />
+                <img class="menu-icon" src="pics/icons/menu.png" />
             </div>
             <div class="dropdown-content">
                 <a href="gallery.aspx">Gallery</a>
@@ -29,7 +29,7 @@
             <asp:HyperLink NavigateUrl="~/sign_in.aspx" id ="aSignIn" CssClass="all-menu-item" text="Sign in" runat="server" />
             <div class="dropdown">
                     <div class="dropbtn">
-                        <img src="pics/icons/new/user.png" class="account-pic" />
+                        <img src="pics/icons/user.png" class="account-pic" />
                     </div>
                     <div class="dropdown-content center account-content">
                         <asp:Label class="all-menu-item center account-name" ID="account" runat="server" />

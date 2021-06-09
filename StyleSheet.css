@@ -263,6 +263,7 @@ button {
 .dropdown {
     float: left;
     overflow: hidden;
+    height: 50px;
 }
 
     .dropdown .dropbtn {
@@ -365,7 +366,7 @@ button {
 
 .account-content {
     position: fixed;
-    right: 255px;
+    right: 55px;
     margin-top: 10px;
 }
 
