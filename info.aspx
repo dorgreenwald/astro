@@ -42,11 +42,6 @@
         </form>
     </div>
     <div class="info">
-        <!--<div class="menu">
-            <a href="#top">top</a>
-            <a href="#astronomy">Astronomy</a>
-            <a href="#astrophysics">Astrophysics</a>
-        </div>-->
         <div class="subjects">
             <section id="astronomy" class="info-text-and-pic">
                 <h2 class="title">Astronomy</h2>
